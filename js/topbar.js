@@ -21,8 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     toggle.addEventListener('click', function() {
         menu.classList.toggle('open');
     });
-
-    // Ferme le menu au clic sur un lien, mais laisse le scroll natif
     menu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => menu.classList.remove('open'));
     });

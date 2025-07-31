@@ -17,6 +17,14 @@
 
 #accueil #accroche {
     font-size: 1.2em;
-    color: #cccccc;
+    color: #ffffff;
     margin-top: 10px;
+}
+
+#accueil img {
+    margin-left: 55em;
+    width: 35%;
+    height: auto;
+    margin-top: -20em;
+    border-radius: 10em;
 }
