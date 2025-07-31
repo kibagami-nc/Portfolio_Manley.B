@@ -1,0 +1,16 @@
+#accueil {
+    padding-top: 22em;
+    padding-left: 15em;
+    text-align: left;
+}
+
+#accueil h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#accueil p {
+    font-size: 1.5em;
+    color: #ffffff;
+}
