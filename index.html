@@ -23,12 +23,13 @@
 <header id="topbar">
     <span>🌊 Portfolio - Manley.B 🌊</span>
     <nav>
-        <ul class="menu">
-            <li href="#accueil">Accueil</li>
-            <li href="#competence_certifs">Compétences & Certificats</li>
-            <li href="#formation">Formation</li>
-            <li href="#projets">Projets</li>
-            <li href="#contact">Contact</li>
+        <button id="menu-toggle" aria-label="Ouvrir le menu">Menu ☰</button>
+        <ul class="menu" id="menu-list">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#competence_certifs">Compétences & Certificats</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <script src="./js/topbar.js"></script>
@@ -38,7 +39,7 @@
     <section id="accueil">
         <p>Bonjour, je m'appelle</p>
         <h1>Manley Bouille</h1>
-        <p>Je suis actuellement en BTS SIO option SLAM.</p>
+        <p id="accroche">Actuellement en BTS SIO (Services Informatiques aux Organisations).</p>
     </section>
 
     <section id="competence_certifs">
