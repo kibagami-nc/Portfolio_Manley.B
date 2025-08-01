@@ -16,8 +16,6 @@
     
     <title>🌊 Portfolio - Manley.B 🌊</title>
 
-    <script src="./js/titre_dynamique.js"></script>
-
 </head>
 
 <header id="topbar">
@@ -37,19 +35,44 @@
 </header>
 
 <body>
+    <canvas id="bg-anim" style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        pointer-events: none;
+        display: block;
+    "></canvas>
+    <script src="./js/backround.js"></script>
+
     <section id="accueil">
+
         <div class="accueil-texte">
             <p>Bonjour 👋, je m'appelle</p>
             <h1>Manley Bouille</h1>
             <p id="accroche">Actuellement en BTS SIO Services Informatiques aux Organisations</p>
         </div>
+
         <img src="./img/miku.png" alt="Logo Manley" id="image-accueil" />
+            
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
     </section>
 
     <section id="presentation">
-        <h2>Présentation</h2>
-        <p>Bienvenue sur mon portfolio ! Je suis Manley Bouille, étudiant en BTS SIO. Découvrez mon parcours et mes compétences.</p>
+        <div class="presentation-content">
+            <h2>Présentation 👨🏻‍💻</h2>
+            <p>En dehors de mes études, je m'intéresse à la culture geek, aux jeux vidéo et à la musique. Je suis toujours à la recherche de nouvelles opportunités pour collaborer.</p>
+        </div>
+        <img src="./img/Pfp_Manley.jpg" alt="Pfp Manley" id="image-pfp" />
     </section>
+
     <section id="competence_certifs">
         <h2>Compétences & Certificats</h2>
         <p>Voici un aperçu de mes compétences et certificats obtenus.</p>
