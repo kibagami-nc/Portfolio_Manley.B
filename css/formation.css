@@ -40,3 +40,38 @@
     text-align: left;
     max-width: 35em;
 }
+
+.barre-gauche, .barre-droite {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: white;
+}
+
+.barre-gauche {
+  left: 5%;
+}
+
+.barre-droite {
+  right: 5%;
+}
+
+.barre-gauche .point,
+.barre-droite .point {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background-color: limegreen;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.contenu-formation {
+  width: 60%;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
