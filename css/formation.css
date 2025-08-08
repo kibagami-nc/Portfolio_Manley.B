@@ -1,65 +1,87 @@
 #formation {
-    min-height: 40vh;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0 8vw;
-    gap: 3em;
-    text-align: left;
-    box-sizing: border-box;
-    position: relative;
+  min-height: 60vh;
+  height: 60vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8vw;
+  gap: 3em;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
 }
 
 #formation-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-    position: relative;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  position: relative;
+  height: auto;
+}
+
+#formation .contenu-formation {
+  display: flex;
+  left: 25%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  height: auto;
 }
 
 #formation h2 {
-    margin-top: -12em;
-    font-size: 2.5em;
-    color: #ffffff;
-    text-align: center;
-    position: flex;
-    width: auto;
+  margin-top: -70%;
+  font-size: 2.5em;
+  color: #ffffff;
+  text-align: center;
+  position: flex;
+  width: auto;
+}
+
+#formation h3{
+  padding-left: 100%;
+  font-size: 1.8em;
+  color: #31bd9e;
+  text-align: center;
+  margin-top: 1em;
 }
 
 #formation p {
-    font-size: 1.3em;
-    color: #aaaaaa;
-    margin: 0 0 1.5em 0;
-    text-align: center;
-    max-width: 35em;
+  font-size: 1.3em;
+  color: #aaaaaa;
+  margin: 0 0 1.5em 0;
+  text-align: center;
+  max-width: 35em;
 }
 
-.barre-gauche {
+.barre {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: -50%;
   width: 4px;
   background-color: white;
 }
 
-.barre-gauche {
-  left: 50%;
+.barre {
+  position: absolute;
+  top: 50%;
+  left: 52.5%;
 }
 
-.barre-gauche .point {
+.barre .point {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 14px;
-  height: 14px;
-  background-color: limegreen;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 255, 136);
   border-radius: 50%;
   z-index: 2;
 }
