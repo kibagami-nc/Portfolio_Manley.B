@@ -7,8 +7,12 @@ topbar.classList.remove('topbar-blur');
 
 window.addEventListener('scroll', function() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Ferme le menu si l'utilisateur fait défiler vers le bas
+    const menu = document.getElementById('menu-list');
     if (currentScroll > lastScroll) {
         topbar.style.top = '-90px';
+        menu.classList.remove('open'); // Ferme le menu
     } else {
         topbar.style.top = '0';
     }
