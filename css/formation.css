@@ -36,15 +36,6 @@
   height: auto;
 }
 
-#formation h2 {
-  margin-top: -10em;
-  font-size: 2.5em;
-  color: #ffffff;
-  text-align: center;
-  position: relative;
-  width: auto;
-}
-
 #formation h3 {
   font-size: 1.8em;
   color: #31bd9e;
@@ -52,29 +43,42 @@
   margin-top: 1em;
 }
 
+#formation h2 {
+  margin-left: -30%;
+  margin-top: -260%;
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
 #formation p {
+  position: absolute;
+  margin-top: -200%;
+  left: -50%;
+  width: 170%;
   font-size: 1.3em;
   color: #aaaaaa;
-  margin: 0 0 1.5em 0;
   text-align: center;
-  max-width: 35em;
+  padding: 0;
+  max-width: 50em; 
 }
 
 .experience-professionnelle {
-  position: relative;
-  right: 25em;
-  text-align: left;
-  width: auto;
-  margin-top: 0;
+  position: absolute;
+  right: 50%;
+  text-align: center;
+  width: 100%;
+  top: 7.5em;
 }
 
 .parcours-scolaire {
-  position: relative;
-  left: 3em;
-  text-align: left;
+  position: absolute;
+  left: 50%;
+  text-align: center;
   width: 100%;
-  margin-top: 0;
-  top: -2.4em;
+  top: 7.5em;
 }
 
 .barre {
