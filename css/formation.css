@@ -45,7 +45,7 @@
 
 #formation h2 {
   margin-left: -30%;
-  margin-top: -260%;
+  margin-top: -100%;
   margin-bottom: 1em;
   font-size: 2.5em;
   color: #ffffff;
@@ -67,18 +67,18 @@
 
 .experience-professionnelle {
   position: absolute;
-  right: 50%;
+  right: 44.5%;
   text-align: center;
   width: 100%;
-  top: 7.5em;
+  top: 11%;
 }
 
 .parcours-scolaire {
   position: absolute;
-  left: 50%;
-  text-align: center;
+  left: 45%;
+  text-align: left;
   width: 100%;
-  top: 7.5em;
+  top: 11%;
 }
 
 .barre {
@@ -91,7 +91,7 @@
 
 .barre {
   position: absolute;
-  top: 70%;
+  top: 30%;
   left: 53%;
 }
 
