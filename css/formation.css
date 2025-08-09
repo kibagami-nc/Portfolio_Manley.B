@@ -37,16 +37,15 @@
 }
 
 #formation h2 {
-  margin-top: -70%;
+  margin-top: -10em;
   font-size: 2.5em;
   color: #ffffff;
   text-align: center;
-  position: flex;
+  position: relative;
   width: auto;
 }
 
-#formation h3{
-  padding-left: 100%;
+#formation h3 {
   font-size: 1.8em;
   color: #31bd9e;
   text-align: center;
@@ -61,6 +60,23 @@
   max-width: 35em;
 }
 
+.experience-professionnelle {
+  position: relative;
+  right: 25em;
+  text-align: left;
+  width: auto;
+  margin-top: 0;
+}
+
+.parcours-scolaire {
+  position: relative;
+  left: 3em;
+  text-align: left;
+  width: 100%;
+  margin-top: 0;
+  top: -2.4em;
+}
+
 .barre {
   position: absolute;
   top: 0;
@@ -71,8 +87,8 @@
 
 .barre {
   position: absolute;
-  top: 50%;
-  left: 52.5%;
+  top: 70%;
+  left: 53%;
 }
 
 .barre .point {
