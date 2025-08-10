@@ -1,4 +1,7 @@
 #presentation {
+    background: linear-gradient(to right, #000000, #01004e, #000000);
+    margin-left: -0.1vh;
+    margin-right: -0.1vh;
     min-height: 40%;
     margin-bottom: 8.5em;
     display: flex;

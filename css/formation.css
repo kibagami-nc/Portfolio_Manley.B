@@ -44,9 +44,10 @@
 }
 
 #formation h2 {
-  margin-left: -30%;
-  margin-top: -100%;
-  margin-bottom: 1em;
+  position: relative;
+  top: -30vh;
+  left: -15%;
+  margin: 0;
   font-size: 2.5em;
   color: #ffffff;
   text-align: center;
@@ -54,31 +55,30 @@
 }
 
 #formation p {
-  position: absolute;
-  margin-top: -200%;
-  left: -50%;
-  width: 170%;
-  font-size: 1.3em;
-  color: #aaaaaa;
+  position: relative;
+  top: -30vh;
+  left: -15%;
+  margin: 0;
+  font-size: 1.5em;
+  color: #ffffff;
   text-align: center;
-  padding: 0;
-  max-width: 50em; 
+  width: 100%;
 }
 
 .experience-professionnelle {
   position: absolute;
-  right: 44.5%;
+  right: 44.5vh;
   text-align: center;
   width: 100%;
-  top: 11%;
+  top: 11vh;
 }
 
 .parcours-scolaire {
   position: absolute;
-  left: 45%;
+  left: 45vh;
   text-align: left;
   width: 100%;
-  top: 11%;
+  top: 11vh;
 }
 
 .barre {
@@ -91,7 +91,7 @@
 
 .barre {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 53%;
 }
 
