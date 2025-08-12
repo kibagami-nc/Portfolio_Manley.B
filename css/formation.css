@@ -45,7 +45,7 @@ html, body {
 
 .experience-professionnelle {
   position: absolute;
-  left: 0;
+  left: -10%;
   top: 6vh;
   text-align: center;
   width: auto;
