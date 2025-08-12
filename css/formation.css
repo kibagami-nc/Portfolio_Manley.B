@@ -44,6 +44,7 @@ html, body {
 }
 
 .experience-professionnelle {
+  user-select: none;
   position: absolute;
   left: -10%;
   top: 6vh;
@@ -54,6 +55,7 @@ html, body {
 }
 
 .parcours-scolaire {
+  user-select: none;
   position: absolute;
   right: 0;
   top: 6vh;
@@ -63,18 +65,64 @@ html, body {
   font-size: 1.8em;
 }
 
-.contenu-parcours-scolaire {
+
+/**/
+
+h4.sco-poste-1 {
   position: absolute;
-  top: 30%;
-  left: 62%;
+  top: 25%;
+  left: 60%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
   font-size: 2em;
   font-weight: bold;
   color: #ffffff;
   width: auto;
   z-index: 999;
 }
+
+.contenu-parcours-scolaire-1 p {
+  position: absolute;
+  top: 50%;
+  left: 80.5%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #797979;
+  width: 600px;
+  z-index: 999;
+  margin-left: 3px;
+}
+
+h4.sco-poste-2 {
+  position: absolute;
+  top: 76%;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffffff;
+  width: auto;
+  z-index: 999;
+}
+
+.contenu-parcours-scolaire-2 p {
+  position: absolute;
+  top: 105%;
+  left: 80.5%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #797979;
+  width: 600px;
+  z-index: 999;
+}
+
+
+/**/
 
 .barre {
   position: absolute;
