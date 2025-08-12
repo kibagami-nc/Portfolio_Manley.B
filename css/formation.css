@@ -46,7 +46,7 @@ html, body {
 .experience-professionnelle {
   user-select: none;
   position: absolute;
-  left: -10%;
+  right: 75%;
   top: 6vh;
   text-align: center;
   width: auto;
@@ -57,7 +57,7 @@ html, body {
 .parcours-scolaire {
   user-select: none;
   position: absolute;
-  right: 0;
+  left: 75%;
   top: 6vh;
   text-align: left;
   width: auto;
@@ -70,10 +70,10 @@ html, body {
 
 h4.sco-poste-1 {
   position: absolute;
-  top: 25%;
-  left: 60%;
+  top: 24%;
+  left: 56%;
   transform: translate(-50%, -50%);
-  text-align: left;
+  text-align: center;
   font-size: 2em;
   font-weight: bold;
   color: #ffffff;
@@ -83,8 +83,8 @@ h4.sco-poste-1 {
 
 .contenu-parcours-scolaire-1 p {
   position: absolute;
-  top: 50%;
-  left: 80.5%;
+  top: 48%;
+  left: 66.5%;
   transform: translate(-50%, -50%);
   text-align: left;
   font-size: 1.5em;
@@ -98,9 +98,9 @@ h4.sco-poste-1 {
 h4.sco-poste-2 {
   position: absolute;
   top: 76%;
-  left: 66%;
+  left: 59%;
   transform: translate(-50%, -50%);
-  text-align: left;
+  text-align: center;
   font-size: 2em;
   font-weight: bold;
   color: #ffffff;
@@ -111,7 +111,7 @@ h4.sco-poste-2 {
 .contenu-parcours-scolaire-2 p {
   position: absolute;
   top: 105%;
-  left: 80.5%;
+  left: 66.5%;
   transform: translate(-50%, -50%);
   text-align: left;
   font-size: 1.5em;
