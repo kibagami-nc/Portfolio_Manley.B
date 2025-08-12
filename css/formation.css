@@ -41,7 +41,7 @@ html, body {
 
 #formation h3 {
   font-size: 1.8em;
-  color: #31bd9e;
+  color: #59006b;
   text-align: center;
   margin-top: 1em;
 }
@@ -101,7 +101,7 @@ html, body {
   top: 30%;
   bottom: -30%;
   width: 4px;
-  background-color: white;
+  background-color: rgb(0, 50, 90);
 }
 
 .barre .point {
@@ -110,7 +110,7 @@ html, body {
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  background-color: rgb(0, 255, 136);
+  background-color: rgb(0, 218, 189);
   border-radius: 50%;
   z-index: 2;
 }
