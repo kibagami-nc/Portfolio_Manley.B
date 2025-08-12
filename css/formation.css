@@ -60,7 +60,6 @@
   left: -15%;
   margin: 0;
   font-size: 1.5em;
-  color: #ffffff;
   text-align: center;
   width: 100%;
 }
@@ -80,6 +79,20 @@
   width: 100%;
   top: 11vh;
 }
+
+.contenu-parcours-scolaire {
+  position: absolute;
+  top: 90%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f3f18d;
+  width: auto;
+  z-index: 999;
+}
+
 
 .barre {
   position: absolute;
