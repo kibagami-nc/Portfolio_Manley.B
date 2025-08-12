@@ -1,5 +1,7 @@
 html, body {
   overflow-x: hidden; /* Empêche le scroll horizontal */
+  margin: 0;
+  padding: 0;
 }
 
 #formation {
@@ -15,18 +17,7 @@ html, body {
   text-align: left;
   box-sizing: border-box;
   position: relative;
-}
-
-#formation-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
-  position: relative;
-  height: auto;
+  color: white;
 }
 
 #formation .contenu-formation {
@@ -37,19 +28,14 @@ html, body {
   flex: 1;
   position: relative;
   height: auto;
-}
-
-#formation h3 {
-  font-size: 1.8em;
-  color: #59006b;
+  width: 60%;
   text-align: center;
-  margin-top: 1em;
+  z-index: 1;
 }
 
 #formation h2 {
   position: relative;
   top: -30vh;
-  left: 0;
   margin: 0;
   font-size: 2.5em;
   color: #ffffff;
@@ -57,30 +43,24 @@ html, body {
   width: 100%;
 }
 
-#formation p {
-  position: relative;
-  top: -30vh;
-  left: 0;
-  margin: 0;
-  font-size: 1.5em;
-  text-align: center;
-  width: 100%;
-}
-
 .experience-professionnelle {
   position: absolute;
   left: 0;
+  top: 6vh;
   text-align: center;
   width: auto;
-  top: 6vh;
+  color: #59006b;
+  font-size: 1.8em;
 }
 
 .parcours-scolaire {
   position: absolute;
   right: 0;
+  top: 6vh;
   text-align: left;
   width: auto;
-  top: 6vh;
+  color: #59006b;
+  font-size: 1.8em;
 }
 
 .contenu-parcours-scolaire {
@@ -100,8 +80,11 @@ html, body {
   position: absolute;
   top: 30%;
   bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 4px;
   background-color: rgb(0, 50, 90);
+  z-index: 0;
 }
 
 .barre .point {
@@ -115,9 +98,10 @@ html, body {
   z-index: 2;
 }
 
-.contenu-formation {
-  width: 60%;
-  color: white;
-  text-align: center;
-  z-index: 1;
+.barre .point:nth-child(1) {
+  top: -1%;
+}
+
+.barre .point:nth-child(2) {
+  top: 50%;
 }
