@@ -1,63 +1,61 @@
-// topbar animation
-let lastScroll = 0;
-const topbar = document.getElementById('topbar');
+// Animation de la topbar et gestion du menu
 
-// Applique la transparence au chargement
-topbar.classList.remove('topbar-blur');
-
-window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    
-    // Ferme le menu si l'utilisateur fait défiler vers le bas
-    const menu = document.getElementById('menu-list');
-    if (currentScroll > lastScroll) {
-        topbar.style.top = '-90px';
-        menu.classList.remove('open'); // Ferme le menu
-    } else {
-        topbar.style.top = '0';
-    }
-    lastScroll = currentScroll <= 0 ? 0 : currentScroll;
-
-    // Ajoute/enlève le blur selon la position
-    if (window.scrollY === 0) {
-        topbar.classList.remove('topbar-blur');
-    } else {
-        topbar.classList.add('topbar-blur');
-    }
-});
-
-// Bouton de menu
 document.addEventListener('DOMContentLoaded', function() {
+    const topbar = document.getElementById('topbar');
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu-list');
+    let lastScroll = window.pageYOffset || document.documentElement.scrollTop; // Correction ici
 
-    // Ouvre / ferme le menu
+    // Topbar transparente au chargement
+    topbar.classList.remove('topbar-blur');
+    topbar.style.top = '0'; // Toujours visible au chargement
+
+    // Animation de la topbar au scroll
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Cache la topbar si on descend, l'affiche si on monte
+        if (currentScroll > lastScroll && currentScroll > 10) { // Ajoute une tolérance de 10px
+            topbar.style.top = '-90px';
+            menu.classList.remove('open');
+        } else {
+            topbar.style.top = '0';
+        }
+        lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+
+        // Blur si on n'est pas en haut
+        if (window.scrollY === 0) {
+            topbar.classList.remove('topbar-blur');
+        } else {
+            topbar.classList.add('topbar-blur');
+        }
+    });
+
+    // Ouvre/ferme le menu au clic
     toggle.addEventListener('click', function() {
         menu.classList.toggle('open');
     });
 
-    // Quand on clique sur un lien de sous-menu
+    // Gestion du clic sur les liens du menu
     menu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault(); // Empêche le saut direct de l'ancre
+            e.preventDefault();
 
-            // Ferme le menu
+            // Ferme le menu et cache la topbar
             menu.classList.remove('open');
-
-            // Cache la topbar
             topbar.style.top = '-90px';
 
-            // Effet zoom sur la section ciblée + scroll centré
+            // Scroll fluide et effet zoom sur la section ciblée
             const targetId = link.getAttribute('href').replace('#', '');
             const section = document.getElementById(targetId);
             if (section) {
                 section.scrollIntoView({
-                    behavior: 'smooth', // défilement fluide
-                    block: 'center'     // centre la section
+                    behavior: 'smooth',
+                    block: 'center'
                 });
 
                 section.classList.remove('section-zoom');
-                void section.offsetWidth; // Force reflow
+                void section.offsetWidth;
                 section.classList.add('section-zoom');
             }
         });
