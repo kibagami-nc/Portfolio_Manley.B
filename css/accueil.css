@@ -86,22 +86,25 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   #accueil {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Place le contenu en haut */
     text-align: center;
-    padding: 8em 2vw;
-    gap: 2em;
+    padding: 6em 2vw 2em 2vw;   /* Réduit le padding haut */
+    gap: 0em;
     height: auto;
     min-height: 100vh;
   }
 
   #accueil img {
     padding: 0;
+    width: 50vh;
     max-width: 80vw;
     display: block;
+    margin-top: -6em; /* Monte l'image, même si elle chevauche le texte */
+    margin-bottom: 1.5em;
   }
 
   .arrow {

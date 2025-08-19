@@ -211,7 +211,7 @@ h4.sco-poste-2 {
   position: static;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .contenu-parcours-scolaire-1,
   .contenu-parcours-scolaire-2 {
     left: 100%;
@@ -224,7 +224,7 @@ h4.sco-poste-2 {
   .contenu-parcours-scolaire-1,
   .contenu-parcours-scolaire-2 {
     position: absolute;
-    left: 95%;
+    left: 92.5%;
     top: 30%;
     width: 360px;
     z-index: 999;
