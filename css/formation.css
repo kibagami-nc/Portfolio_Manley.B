@@ -243,7 +243,7 @@ h4.sco-poste-2 {
   .contenu-parcours-scolaire-2 h4,
   .contenu-parcours-scolaire-1 p,
   .contenu-parcours-scolaire-2 p {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .contenu-parcours-scolaire-1 h4,
@@ -264,13 +264,13 @@ h4.sco-poste-2 {
   }
 
   .experience-professionnelle {
-    right: 60%;
+    right: 55%;
   }
 
   .experience-professionnelle,
   .parcours-scolaire {
     top: 8vh;
-    font-size: 1em;
+    font-size: 0.8em;
 
   }
 
