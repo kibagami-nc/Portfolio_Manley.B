@@ -20,7 +20,7 @@ html, body {
   color: white;
 }
 
-#formation .contenu-formation {
+.contenu-formation {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +36,7 @@ html, body {
 #formation h2 {
   position: relative;
   top: -30vh;
+  left: 2.5%;
   margin: 0;
   font-size: 2.5em;
   color: #ffffff;
@@ -47,22 +48,38 @@ html, body {
   user-select: none;
   position: absolute;
   right: 75%;
-  top: 6vh;
+  top: 1vh;
   text-align: center;
   width: auto;
-  color: #59006b;
+  color: #9d00bd;
   font-size: 1.8em;
+  background: rgba(255,255,255,0.08);
+  border: 2px solid #00dabd;
+  border-radius: 12px;
+  padding: 0.4em 1.2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
 }
 
 .parcours-scolaire {
   user-select: none;
   position: absolute;
   left: 75%;
-  top: 6vh;
+  top: 1vh;
   text-align: left;
   width: auto;
-  color: #59006b;
+  color: #9d00bd;
   font-size: 1.8em;
+  background: rgba(255,255,255,0.08);
+  border: 2px solid #00dabd;
+  border-radius: 12px;
+  padding: 0.4em 1.2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
 }
 
 
@@ -83,7 +100,7 @@ h4.sco-poste-1 {
 
 .contenu-parcours-scolaire-1 p {
   position: absolute;
-  top: 48%;
+  top: 95%;
   left: 66.5%;
   transform: translate(-50%, -50%);
   text-align: left;
@@ -110,7 +127,7 @@ h4.sco-poste-2 {
 
 .contenu-parcours-scolaire-2 p {
   position: absolute;
-  top: 105%;
+  top: 130%; /* Était 113%, augmente pour descendre encore */
   left: 66.5%;
   transform: translate(-50%, -50%);
   text-align: left;
@@ -152,4 +169,112 @@ h4.sco-poste-2 {
 
 .barre .point:nth-child(2) {
   top: 50%;
+}
+
+.contenu-parcours-scolaire-1,
+.contenu-parcours-scolaire-2 {
+  position: absolute;
+  left: 65%;
+  top: 30%;
+  width: 340px;
+  z-index: 999;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5.2em;
+}
+
+.contenu-parcours-scolaire-2 {
+  top: 80%;
+}
+
+.contenu-parcours-scolaire-1 h4,
+.contenu-parcours-scolaire-2 h4 {
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #9e8100;
+  width: auto;
+  position: static;
+}
+
+.contenu-parcours-scolaire-1 p,
+.contenu-parcours-scolaire-2 p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #a8a8a8;
+  width: 100%;
+  position: static;
+}
+
+@media (max-width: 900px) {
+  .contenu-parcours-scolaire-1,
+  .contenu-parcours-scolaire-2 {
+    left: 100%;
+    width: 90vw;
+    min-width: 0;
+    text-align: left;
+    gap: 1em;
+  }
+
+  .contenu-parcours-scolaire-1,
+  .contenu-parcours-scolaire-2 {
+    position: absolute;
+    left: 95%;
+    top: 30%;
+    width: 360px;
+    z-index: 999;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.2em;
+  }
+
+  .contenu-parcours-scolaire-2 {
+    top: 80%;
+  }
+  
+  .contenu-parcours-scolaire-1 h4,
+  .contenu-parcours-scolaire-2 h4,
+  .contenu-parcours-scolaire-1 p,
+  .contenu-parcours-scolaire-2 p {
+    font-size: 1em;
+  }
+
+  .contenu-parcours-scolaire-1 h4,
+  .contenu-parcours-scolaire-2 h4 {
+    text-align: left;
+    margin-left: -6em;
+  }
+
+  .contenu-parcours-scolaire-1 p,
+  .contenu-parcours-scolaire-2 p {
+    text-align: left;
+    width: 100%;
+
+  }
+
+  .parcours-scolaire {
+    left: 65%;
+  }
+
+  .experience-professionnelle {
+    right: 60%;
+  }
+
+  .experience-professionnelle,
+  .parcours-scolaire {
+    top: 8vh;
+    font-size: 1em;
+
+  }
+
+  #formation h2 {
+    font-size: 2em;
+  }
 }

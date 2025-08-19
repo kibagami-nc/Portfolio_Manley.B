@@ -85,3 +85,28 @@
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
+
+@media (max-width: 900px) {
+  #accueil {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8em 2vw;
+    gap: 2em;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #accueil img {
+    padding: 0;
+    max-width: 80vw;
+    display: block;
+  }
+
+  .arrow {
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
