@@ -27,7 +27,7 @@
 
 .lang-icons-bar-moving {
     width: 140%;
-    overflow: visible; /* <-- Change overflow: hidden en overflow: visible */
+    overflow: visible;
     position: relative;
     display: flex;
     align-items: center;
