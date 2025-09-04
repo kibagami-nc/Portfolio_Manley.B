@@ -65,8 +65,8 @@
   }
   #presentation img {
     margin: 2em auto 0 auto;
-    max-width: 60vw;
-    width: 180px;
+    max-width: 80vw;      /* Augmente la largeur max */
+    width: 200px;         /* Augmente la largeur fixe */
     border-radius: 8em;
     display: block;
   }

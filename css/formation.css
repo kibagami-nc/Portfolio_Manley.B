@@ -34,247 +34,181 @@ html, body {
 }
 
 #formation h2 {
-  position: relative;
-  top: -30vh;
-  left: 2.5%;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 2em;
   font-size: 2.5em;
   color: #ffffff;
   text-align: center;
   width: 100%;
+  position: static;
 }
 
 .experience-professionnelle {
   user-select: none;
-  position: absolute;
-  right: 75%;
-  top: 1vh;
-  text-align: center;
-  width: auto;
+  position: static;
+  right: unset;
+  top: unset;
+  width: 100%;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 0 1em 0;
+  font-size: 1.6em;
   color: #9d00bd;
-  font-size: 1.8em;
-  background: rgba(255,255,255,0.08);
-  border: 2px solid #00dabd;
-  border-radius: 12px;
-  padding: 0.4em 1.2em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #00dabd;
+  border-radius: 0;
+  display: block;
   letter-spacing: 1px;
-  display: inline-block;
 }
 
 .parcours-scolaire {
   user-select: none;
-  position: absolute;
-  left: 75%;
-  top: 1vh;
-  text-align: left;
-  width: auto;
+  position: static;
+  left: unset;
+  top: unset;
+  width: 100%;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 0 1em 0;
+  font-size: 1.6em;
   color: #9d00bd;
-  font-size: 1.8em;
-  background: rgba(255,255,255,0.08);
-  border: 2px solid #00dabd;
-  border-radius: 12px;
-  padding: 0.4em 1.2em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #00dabd;
+  border-radius: 0;
+  display: block;
   letter-spacing: 1px;
-  display: inline-block;
 }
 
-
-/**/
-
-h4.sco-poste-1 {
-  position: absolute;
-  top: 24%;
-  left: 56%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-  color: #ffffff;
-  width: auto;
-  z-index: 999;
-}
-
-.contenu-parcours-scolaire-1 p {
-  position: absolute;
-  top: 95%;
-  left: 66.5%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #797979;
-  width: 600px;
-  z-index: 999;
-  margin-left: 3px;
-}
-
-h4.sco-poste-2 {
-  position: absolute;
-  top: 76%;
-  left: 59%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-  color: #ffffff;
-  width: auto;
-  z-index: 999;
-}
-
-.contenu-parcours-scolaire-2 p {
-  position: absolute;
-  top: 130%; /* Était 113%, augmente pour descendre encore */
-  left: 66.5%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #797979;
-  width: 600px;
-  z-index: 999;
-}
-
-
-/**/
-
-.barre {
-  position: absolute;
-  top: 30%;
-  bottom: -30%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  background-color: rgb(0, 50, 90);
-  z-index: 0;
-}
-
-.barre .point {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background-color: rgb(0, 218, 189);
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.barre .point:nth-child(1) {
-  top: -1%;
-}
-
-.barre .point:nth-child(2) {
-  top: 50%;
+.colonne-sco {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.2em;
 }
 
 .contenu-parcours-scolaire-1,
 .contenu-parcours-scolaire-2 {
-  position: absolute;
-  left: 65%;
-  top: 30%;
-  width: 340px;
-  z-index: 999;
-  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5.2em;
-}
-
-.contenu-parcours-scolaire-2 {
-  top: 80%;
-}
-
-.contenu-parcours-scolaire-1 h4,
-.contenu-parcours-scolaire-2 h4 {
-  margin: 0;
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-  color: #9e8100;
-  width: auto;
+  gap: 0.5em;
+  margin-bottom: 1em;
   position: static;
-}
-
-.contenu-parcours-scolaire-1 p,
-.contenu-parcours-scolaire-2 p {
-  margin: 0;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #a8a8a8;
   width: 100%;
-  position: static;
+}
+
+.colonne-sco h4 {
+  color: #9e8100;
+  font-size: 1.2em;
+  margin: 1em 0 0.3em 0;
+  text-align: left;
+  font-weight: bold;
+}
+
+.colonne-sco p {
+  color: #a8a8a8;
+  font-size: 1em;
+  margin: 0 0 1.2em 0;
+  font-weight: 500;
+  text-align: left;
+}
+
+.formation-flex {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2em;
+}
+
+.colonne-pro, .colonne-sco {
+  flex: 1 1 0;
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 2em 1.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  min-width: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.2em;
+}
+
+.colonne-pro h3, .colonne-sco h3 {
+  margin-bottom: 1em;
+  margin-top: 0;
+  color: #9d00bd;
+  font-size: 1.6em;
+  text-align: center;
+  border-bottom: 2px solid #00dabd;
+  padding-bottom: 0.5em;
+}
+
+.colonne-pro h4, .colonne-sco h4 {
+  color: #9e8100;
+  font-size: 1.2em;
+  margin: 1em 0 0.3em 0;
+  text-align: left;
+}
+
+.colonne-pro p, .colonne-sco p {
+  color: #a8a8a8;
+  font-size: 1em;
+  margin: 0 0 1.2em 0;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  #formation {
+    margin-top: 17em; /* Ajuste la valeur selon la hauteur de ton image */
+  }
+  #formation h2 {
+    font-size: 2em;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1100px) {
-  .contenu-parcours-scolaire-1,
-  .contenu-parcours-scolaire-2 {
-    left: 100%;
-    width: 90vw;
-    min-width: 0;
-    text-align: left;
-    gap: 1em;
-  }
-
-  .contenu-parcours-scolaire-1,
-  .contenu-parcours-scolaire-2 {
-    position: absolute;
-    left: 92.5%;
-    top: 30%;
-    width: 360px;
-    z-index: 999;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6.2em;
-  }
-
-  .contenu-parcours-scolaire-2 {
-    top: 80%;
-  }
-  
-  .contenu-parcours-scolaire-1 h4,
-  .contenu-parcours-scolaire-2 h4,
-  .contenu-parcours-scolaire-1 p,
-  .contenu-parcours-scolaire-2 p {
-    font-size: 0.8em;
-  }
-
-  .contenu-parcours-scolaire-1 h4,
-  .contenu-parcours-scolaire-2 h4 {
-    text-align: left;
-    margin-left: -6em;
-  }
-
-  .contenu-parcours-scolaire-1 p,
-  .contenu-parcours-scolaire-2 p {
-    text-align: left;
-    width: 100%;
-
-  }
-
-  .parcours-scolaire {
-    left: 65%;
-  }
-
-  .experience-professionnelle {
-    right: 55%;
-  }
-
-  .experience-professionnelle,
-  .parcours-scolaire {
-    top: 8vh;
-    font-size: 0.8em;
-
-  }
-
   #formation h2 {
     font-size: 2em;
+    margin-top: 7em; /* Augmente la marge pour descendre le titre sous l'image */
   }
+}
+
+@media (max-width: 900px) {
+  .formation-flex {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .colonne-pro, .colonne-sco {
+    width: 100%;
+    padding: 1.2em 0.8em;
+  }
+}
+
+/* Masquer les anciens positionnements */
+.barre, .titre-formation,
+.contenu-parcours-scolaire-1, .contenu-parcours-scolaire-2,
+.contenu-parcours-professionel-1 {
+  position: static !important;
+  left: unset !important;
+  top: unset !important;
+  width: auto !important;
+  z-index: unset !important;
+  text-align: left !important;
+  display: block !important;
+  background: none !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
