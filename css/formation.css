@@ -104,7 +104,7 @@ html, body {
 }
 
 .colonne-sco h4 {
-  color: #9e8100;
+  color: #ffd000;
   font-size: 1.2em;
   margin: 1em 0 0.3em 0;
   text-align: left;
@@ -153,7 +153,7 @@ html, body {
 }
 
 .colonne-pro h4, .colonne-sco h4 {
-  color: #9e8100;
+  color: #00b1b1;
   font-size: 1.2em;
   margin: 1em 0 0.3em 0;
   text-align: left;
