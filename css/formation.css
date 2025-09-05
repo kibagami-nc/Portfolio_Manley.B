@@ -7,7 +7,6 @@ html, body {
 #formation {
   min-height: 60vh;
   height: 60vh;
-  margin-bottom: 5vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -133,13 +132,19 @@ html, body {
   background: rgba(255,255,255,0.08);
   border-radius: 16px;
   padding: 2em 1.5em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 18px #0006; /* Ajoute un ombrage comme dans projets */
   min-width: 0;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 1.2em;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.colonne-pro:hover, .colonne-sco:hover {
+  box-shadow: 0 8px 32px #0008;
+  transform: translateY(-8px) scale(1.03);
 }
 
 .colonne-pro h3, .colonne-sco h3 {
@@ -168,7 +173,7 @@ html, body {
 
 @media (max-width: 1200px) {
   #formation {
-    margin-top: 17em; /* Ajuste la valeur selon la hauteur de ton image */
+    margin-top: 17em;
   }
   #formation h2 {
     font-size: 2em;

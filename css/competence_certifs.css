@@ -1,6 +1,8 @@
 #competence_certifs {
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 30vh;
+    height: 30vh;
+    margin-bottom: 30vh;
+    bottom: 30vh;
     display: flex;
     flex-direction: row;
     align-items: center;
