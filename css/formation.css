@@ -132,7 +132,7 @@ html, body {
   background: rgba(27, 0, 78, 0.45);
   border-radius: 16px;
   padding: 2em 1.5em;
-  box-shadow: 0 4px 18px #0006; /* Ajoute un ombrage comme dans projets */
+  box-shadow: 0 4px 18px #0006;
   min-width: 0;
   color: #fff;
   display: flex;
@@ -184,7 +184,7 @@ html, body {
 @media (max-width: 1100px) {
   #formation h2 {
     font-size: 2em;
-    margin-top: 7em; /* Augmente la marge pour descendre le titre sous l'image */
+    margin-top: 7em;
   }
 }
 
