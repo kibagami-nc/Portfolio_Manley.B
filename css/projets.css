@@ -1,13 +1,12 @@
 #projets {
     min-height: 100vh;
-    height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 8vw;
-    gap: 3em;
-    text-align: left;
+    gap: 0;
+    text-align: center;
     box-sizing: border-box;
 }
 
@@ -23,4 +22,104 @@
     color: #aaaaaa;
     margin-top: 0.5em;
     margin-bottom: 1.5em;
+}
+
+.projets-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: center;
+    align-items: stretch;
+    margin: 2em 0;
+}
+
+.projet-card {
+    background: #1b004e;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px #0006;
+    padding: 2em 1.5em;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projet-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px #0008;
+}
+
+.projet-img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 12px;
+    margin-bottom: 1em;
+    object-fit: cover;
+    box-shadow: 0 2px 12px #0004;
+}
+
+.projet-card h3 {
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1.3em;
+    color: #00dabd;
+    text-align: center;
+}
+
+.projet-card p {
+    font-size: 1em;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.btn-voir-plus {
+    display: block;
+    margin: 2em auto 0 auto;
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    background: #00dabd;
+    color: #1b004e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0003;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-voir-plus:hover {
+    background: #1b004e;
+    color: #00dabd;
+}
+
+.projets-encadre {
+    width: 100%;
+    max-width: 1400px;
+    margin: 3em auto;
+    padding: 3em 2em 2em 2em;
+    background: rgba(27, 0, 78, 0.45);
+    border-radius: 32px;
+    box-shadow: 0 8px 32px #0006;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+@media (max-width: 900px) {
+    .projets-flexbox {
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+    .projet-card {
+        width: 90vw;
+        max-width: 400px;
+    }
+    .projets-encadre {
+        padding: 2em 0.5em 1.5em 0.5em;
+        border-radius: 18px;
+    }
 }
