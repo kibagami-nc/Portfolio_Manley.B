@@ -129,6 +129,7 @@
         height: 56px;
     }
     .lang-info-box {
+        top: 250%;
         font-size: 1.2em;
         min-width: 160px;
         padding: 0.7em 1em;
