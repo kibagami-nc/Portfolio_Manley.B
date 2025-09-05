@@ -111,7 +111,7 @@ html, body {
 }
 
 .colonne-sco p {
-  color: #a8a8a8;
+  color: #000000;
   font-size: 1em;
   margin: 0 0 1.2em 0;
   font-weight: 500;
@@ -129,7 +129,7 @@ html, body {
 
 .colonne-pro, .colonne-sco {
   flex: 1 1 0;
-  background: rgba(255,255,255,0.08);
+  background: rgba(27, 0, 78, 0.45);
   border-radius: 16px;
   padding: 2em 1.5em;
   box-shadow: 0 4px 18px #0006; /* Ajoute un ombrage comme dans projets */

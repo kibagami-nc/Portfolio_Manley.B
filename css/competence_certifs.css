@@ -1,16 +1,13 @@
 #competence_certifs {
     min-height: 30vh;
-    height: 30vh;
-    margin-bottom: 30vh;
-    bottom: 30vh;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end; /* Place le contenu en bas */
+    align-items: stretch;
     padding: 0 8vw;
     gap: 3em;
-    text-align: left;
     box-sizing: border-box;
+    position: relative;
 }
 
 #competence_certifs h2 {
@@ -34,7 +31,7 @@
     display: flex;
     align-items: center;
     height: 120px;
-    margin-bottom: 2em;
+    margin-bottom: auto;
 }
 
 .lang-icons-bar-moving {
@@ -97,6 +94,25 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+    .lang-info-box {
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translateX(-50%);
+    background: #1b004e;
+    color: #fff;
+    padding: 1em 2em;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0008;
+    font-size: 1.1em;
+    min-width: 220px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    z-index: 9999;
+    white-space: normal;
+    }
     .lang-icon img {
         width: 56px;
         height: 56px;
@@ -105,5 +121,80 @@
         font-size: 0.95em;
         min-width: 160px;
         padding: 0.7em 1em;
+    }
+    .lang-icons-bar-moving {
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    margin-bottom: -35em;
+    }
+}
+
+.certif-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(27, 0, 78, 0.45);
+    border-radius: 18px;
+    box-shadow: 0 4px 18px #0006;
+    padding: 2em 2em;
+    margin: 2em auto 0 auto;
+    max-width: 900px;
+    width: 100%;
+    gap: 2em;
+}
+
+.certif-texte {
+    flex: 1;
+    color: #fff;
+    text-align: left;
+}
+
+.certif-texte h3 {
+    margin: 0 0 0.5em 0;
+    color: #00dabd;
+    font-size: 1.3em;
+}
+
+.certif-texte p {
+    margin: 0;
+    color: #e0e0e0;
+    font-size: 1.1em;
+}
+
+.btn-voir-certif {
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    background: #00dabd;
+    color: #1b004e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0003;
+    transition: background 0.2s, color 0.2s;
+    margin-left: 2em;
+}
+
+.btn-voir-certif:hover {
+    background: #1b004e;
+    color: #00dabd;
+}
+
+@media (max-width: 900px) {
+    .certif-flexbox {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.2em 1em;
+        gap: 1.2em;
+        text-align: center;
+    }
+    .btn-voir-certif {
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
     }
 }
