@@ -106,6 +106,7 @@
     display: block;
     margin-top: -6em;
     margin-bottom: 1.5em;
+    z-index: 999;
   }
 
   .arrow {
