@@ -1,5 +1,5 @@
 #presentation {
-    background: linear-gradient(to right, #00000000, #1b004ead, #00000000);
+    background: linear-gradient(to right, #00000000, #CFDBD5, #00000000);
     margin-left: auto;
     margin-right: auto;
     min-height: 40%;
@@ -26,21 +26,23 @@
 }
 
 #presentation h2 {
+  user-select: none;
     font-size: 2.5em;
-    color: #ffffff;
+    color: #333533;
     margin-bottom: 0.5em;
     position: static;
 }
 
 #presentation p {
     font-size: 1.3em;
-    color: #aaaaaa;
+    color: #666b68;
     margin: 0 0 1.5em 0;
     text-align: center;
     max-width: 35em;
 }
 
 #presentation img {
+  user-select: none;
     flex: 0 0 auto;
     max-width: 320px;
     width: 10%;

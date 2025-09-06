@@ -19,12 +19,13 @@
 
 #competence_certifs p {
     font-size: 1.2em;
-    color: #aaaaaa;
+    color: #474947ad;
     margin-top: 0.5em;
     margin-bottom: 1.5em;
 }
 
 .lang-icons-bar-moving {
+    user-select: none;
     width: 100%;
     overflow: visible;
     position: relative;
@@ -64,6 +65,7 @@
 }
 
 .lang-icon:hover img {
+    user-select: none;
     transform: scale(1.15);
 }
 
@@ -72,8 +74,8 @@
     left: 50%;
     top: 300%;
     transform: translateX(-50%);
-    background: #1b004e;
-    color: #fff;
+    background: #CFDBD5;
+    color: #333533;
     padding: 1em 2em;
     border-radius: 12px;
     box-shadow: 0 2px 12px #0008;
@@ -110,11 +112,8 @@
     left: 50%;
     top: 150%;
     transform: translateX(-50%);
-    background: #1b004e;
-    color: #fff;
     padding: 1em 2em;
     border-radius: 12px;
-    box-shadow: 0 2px 12px #0008;
     font-size: 1.1em;
     min-width: 220px;
     text-align: center;
@@ -145,6 +144,7 @@
 }
 
 .certif-flexbox {
+    user-select: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,26 +157,24 @@
 
 .certif-texte {
     flex: 1;
-    color: #fff;
     text-align: left;
 }
 
 .certif-texte h3 {
     margin: 0 0 0.5em 0;
-    color: #00dabd;
+    color: #242423;
     font-size: 1.3em;
 }
 
 .certif-texte p {
     margin: 0;
-    color: #e0e0e0;
     font-size: 1.1em;
 }
 
 .btn-voir-certif {
     padding: 0.8em 2em;
     font-size: 1.1em;
-    background: #00dabd;
+    background: #F5CB5C;
     color: #1b004e;
     border: none;
     border-radius: 8px;
@@ -189,7 +187,7 @@
 
 .btn-voir-certif:hover {
     background: #1b004e;
-    color: #00dabd;
+    color: #F5CB5C;
 }
 
 @media (max-width: 900px) {

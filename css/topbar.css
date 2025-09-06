@@ -5,7 +5,7 @@
     width: 100%;
     height: 85px;
     background: transparent;
-    color: #ffffff;
+    color: #242423;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,7 +36,7 @@
 }
 
 #menu-toggle {
-    background: #2d70b3;
+    background: #242423;
     color: #ffffff;
     border: none;
     font-size: 1.5em;
@@ -48,7 +48,7 @@
 }
 
 #menu-toggle:hover {
-    background: #307ac4;
+    background: #333533;
 }
 
 .menu {
@@ -57,7 +57,7 @@
     position: absolute;
     top: 2.65em;
     right: 0em;
-    background: #2d70b3;
+    background: #242423;
     min-width: 200px;
     box-shadow: 0 4px 16px rgba(44,62,80,0.2);
     z-index: 1001;
@@ -86,7 +86,7 @@
 }
 
 .menu a:hover {
-    background: #34495e;
+    background: #333533;
 }
 
 .section-zoom {

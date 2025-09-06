@@ -13,6 +13,7 @@
 }
 
 #accueil .accueil-texte {
+    user-select: none;
     flex: 1 1 0;
     min-width: 250px;
 }
@@ -20,17 +21,17 @@
 #accueil h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #000000;
 }
 
 #accueil p {
     font-size: 1.5em;
-    color: #ffffff;
+    color: #000000;
 }
 
 #accueil #accroche {
     font-size: 1.2em;
-    color: #aaaaaa;
+    color: #666b68;
     margin-top: 10px;
 }
 
@@ -57,8 +58,8 @@
     display: block;
     width: 1.5vw;
     height: 1.5vw;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
+    border-bottom: 5px solid #333533;
+    border-right: 5px solid #333533;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
@@ -90,9 +91,9 @@
   #accueil {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Place le contenu en haut */
+    justify-content: flex-start;
     text-align: center;
-    padding: 6em 2vw 2em 2vw;   /* Réduit le padding haut */
+    padding: 6em 2vw 2em 2vw;
     gap: 0em;
     height: auto;
     min-height: 100vh;
@@ -103,7 +104,7 @@
     width: 50vh;
     max-width: 80vw;
     display: block;
-    margin-top: -6em; /* Monte l'image, même si elle chevauche le texte */
+    margin-top: -6em;
     margin-bottom: 1.5em;
   }
 
