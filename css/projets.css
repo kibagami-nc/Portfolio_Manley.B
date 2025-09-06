@@ -108,7 +108,7 @@
     backdrop-filter: blur(2px);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 75vh) {
     .projets-flexbox {
         flex-direction: column;
         gap: 2em;
@@ -120,7 +120,14 @@
         min-width: 400px;
     }
     .projets-encadre {
+        margin-top: 15em;
         padding: 0.5em 0.5em 0.5em 0.5em;
         border-radius: 18px;
+    }
+    .btn-voir-plus {
+        font-size: 1.7em;
+    }
+    .projet-card h3 {
+    font-size: 2.3em;
     }
 }

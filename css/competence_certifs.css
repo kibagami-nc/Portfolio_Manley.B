@@ -26,7 +26,7 @@
 
 .lang-icons-bar-moving {
     user-select: none;
-    width: 130%;
+    width: 180%;
     overflow: visible;
     position: relative;
     display: flex;
@@ -36,7 +36,7 @@
 }
 
 .lang-icons-bar-moving {
-    animation: scroll-icons 18s linear infinite;
+    animation: scroll-icons 20s linear infinite;
 }
 
 .lang-icons-bar-moving.paused {
@@ -44,8 +44,8 @@
 }
 
 @keyframes scroll-icons {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(110%); }
+    0% { transform: translateX(-38%); }
+    100% { transform: translateX(60%); }
 }
 
 .lang-icon {
@@ -94,10 +94,13 @@
     pointer-events: auto;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 75vh) {
+    @keyframes scroll-icons {
+    0% { transform: translateX(-68%); }
+    100% { transform: translateX(60%); }
+    }
     #competence_certifs {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -129,35 +132,50 @@
     }
     .lang-info-box {
         top: 250%;
-        font-size: 1.2em;
+        font-size: 2em;
         min-width: 160px;
         padding: 0.7em 1em;
     }
     .lang-icons-bar-moving {
-    width: 100%;
     overflow: visible;
     position: relative;
     display: flex;
     align-items: center;
-    bottom: -270px;
+    bottom: -32em;
+    }
+    .certif-flexbox {
+        font-size: 1.5em;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.2em;
+        text-align: center;
+    }
+    .btn-voir-certif {
+        margin-top: 0em;
+        width: 100%;
     }
 }
 
 .certif-flexbox {
+    max-width: 700px;
+    min-width: 700px;
+    background: #CFDBD5;
     user-select: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 2em;
-    margin: 2em auto 0 auto;
-    max-width: 900px;
+    padding: 1.5em 2em;
+    margin: 2em auto -5em auto;
     width: 100%;
     gap: 2em;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0003;
 }
 
+
 .certif-texte {
-    flex: 1;
-    text-align: left;
+    flex: 0.8;
+    text-align: center;
 }
 
 .certif-texte h3 {
@@ -188,19 +206,4 @@
 .btn-voir-certif:hover {
     background: #1b004e;
     color: #F5CB5C;
-}
-
-@media (max-width: 900px) {
-    .certif-flexbox {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 1.2em 1em;
-        gap: 1.2em;
-        text-align: center;
-    }
-    .btn-voir-certif {
-        margin-left: 0;
-        margin-top: 1em;
-        width: 100%;
-    }
 }
