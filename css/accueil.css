@@ -102,7 +102,7 @@
   #accueil img {
     padding: 0;
     width: 50vh;
-    max-width: 80vw;
+    min-width: 50vw;
     display: block;
     margin-top: -6em;
     margin-bottom: 1.5em;
