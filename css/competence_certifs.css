@@ -100,7 +100,7 @@
     100% { transform: translateX(60%); }
     }
     #competence_certifs {
-    min-height: 70vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -141,7 +141,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    bottom: -38em;
+    bottom: -47em;
     }
     .certif-flexbox {
         font-size: 1.5em;
