@@ -117,9 +117,10 @@
     .projet-card {
         width: 90vw;
         max-width: 400px;
+        min-width: 400px;
     }
     .projets-encadre {
-        padding: 2em 0.5em 1.5em 0.5em;
+        padding: 0.5em 0.5em 0.5em 0.5em;
         border-radius: 18px;
     }
 }

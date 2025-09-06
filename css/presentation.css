@@ -51,7 +51,7 @@
     display: block;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75vh) {
   #presentation {
     flex-direction: column;
     align-items: center;
@@ -59,17 +59,23 @@
     text-align: center;
     gap: 2em;
     padding: -2em 2vw;
-    min-height: 10vh;
+    min-height: 20vh;
   }
   .presentation-content {
     align-items: center;
     text-align: center;
   }
   #presentation img {
-    margin: 2em auto 0 auto;
-    max-width: 80vw;      /* Augmente la largeur max */
-    width: 200px;         /* Augmente la largeur fixe */
-    border-radius: 8em;
-    display: block;
+    min-width: 0vh;
+    width: 0px;
   }
+  #presentation h2 {
+    font-size: 4.5em;
+
+}
+
+#presentation p {
+    font-size: 2.5em;
+
+}
 }
