@@ -70,7 +70,7 @@
     color: #F5CB5C;
 }
 
-@media (max-width: 75vh) {
+@media (max-width: 57vh) {
   #presentation {
     flex-direction: column;
     align-items: center;

@@ -1,26 +1,121 @@
 #contact {
     min-height: 100vh;
-    height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 8vw;
-    gap: 3em;
-    text-align: left;
+    gap: 2em;
+    text-align: center;
     box-sizing: border-box;
 }
 
 #contact h2 {
     font-size: 1.5em;
-    color: #ffffff;
+    color: #000000;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
 #contact p {
     font-size: 1.2em;
-    color: #aaaaaa;
+    color: #333533a6;
     margin-top: 0.5em;
     margin-bottom: 1.5em;
+}
+
+.contact-encadre {
+    width: 100%;
+    max-width: 1400px;
+    margin: 3em auto;
+    padding: 3em 1em 2em 0em;
+    background: #CFDBD5;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px #0006;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-submit {
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    background: #F5CB5C;
+    color: #1b004e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0003;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-submit:hover {
+    background: #1b004e;
+    color: #F5CB5C;
+}
+
+.contact-info {
+    margin-top: 2em;
+    font-size: 1.2em;
+    color: #242423;
+}
+
+.contact-info a {
+    color: #1b004e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #F5CB5C;
+}
+
+@media (max-width: 57vh) {
+    .contact-encadre {
+        margin-top: 15em;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 18px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 2.1em;
+    }
+
+    .btn-submit {
+        font-size: 2.7em;
+    }
+    #contact h2 {
+    font-size: 2.5em;
+    }
+
+    #contact p {
+    font-size: 2.2em;
+    }
 }

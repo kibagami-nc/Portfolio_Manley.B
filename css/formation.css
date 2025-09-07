@@ -167,7 +167,7 @@ html, body {
   font-weight: 500;
 }
 
-@media (max-width: 75vh) {
+@media (max-width: 57vh) {
   .colonne-pro h3, .colonne-sco h3 {
   font-size: 3em;
 }

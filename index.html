@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/presentation.css"/>
     <link rel="stylesheet" href="./css/projets.css"/>
     <link rel="stylesheet" href="./css/topbar.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
 
     <title>🌊 Portfolio - Manley.B 🌊</title>
 
@@ -179,9 +180,23 @@
 
 
     <section id="contact" class="category">
-        <h2>Contact</h2>
-        <p>N'hésitez pas à me contacter pour toute question ou collaboration.</p>
+        <div class="contact-encadre">
+            <h2>Contact 📬</h2>
+            <p>Vous pouvez me contacter pour toute question ou collaboration. Remplissez le formulaire ci-dessous ou utilisez les informations de contact.</p>
+            
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Votre Nom" required />
+                <input type="email" name="email" placeholder="Votre Email" required />
+                <textarea name="message" placeholder="Votre message..." required></textarea>
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+            
+            <div class="contact-info">
+                <p>Vous pouvez aussi me joindre par email à <a href="mailto:manley.b@example.com">manley.b@example.com</a>.</p>
+            </div>
+        </div>
     </section>
+
 
     <script src="./js/fadeIn.js"></script>
 
@@ -189,7 +204,25 @@
 </body>
 
 <footer>
-    <p>© 2025 Manley.B - Tous droits réservés</p>
+    <div class="footer-container">
+        <p>© 2025 Manley.B - Tous droits réservés</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
 </footer>
+
+
 
 </html>

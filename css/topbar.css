@@ -106,7 +106,7 @@
     }
 }
 
-@media (max-width: 75vh) {
+@media (max-width: 57vh) {
     #topbar {
     height: 200px;
     font-size: 3em;

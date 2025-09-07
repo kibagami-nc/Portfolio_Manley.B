@@ -94,7 +94,7 @@
     pointer-events: auto;
 }
 
-@media (max-width: 75vh) {
+@media (max-width: 57vh) {
     @keyframes scroll-icons {
     0% { transform: translateX(-68%); }
     100% { transform: translateX(60%); }

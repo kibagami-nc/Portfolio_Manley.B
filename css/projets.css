@@ -98,7 +98,7 @@
     width: 100%;
     max-width: 1400px;
     margin: 3em auto;
-    padding: 3em 2em 2em 2em;
+    padding: 3em 1em 2em 0em;
     background: #CFDBD5;
     border-radius: 32px;
     box-shadow: 0 8px 32px #0006;
@@ -108,7 +108,7 @@
     backdrop-filter: blur(2px);
 }
 
-@media (max-width: 75vh) {
+@media (max-width: 57vh) {
     .projets-flexbox {
         flex-direction: column;
         gap: 2em;

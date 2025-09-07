@@ -12,7 +12,7 @@ const fadeInOnScroll = (entries, observer) => {
 
 // Créer un observateur
 const observer = new IntersectionObserver(fadeInOnScroll, {
-    threshold: 0.5 // L'élément doit être à 50% visible pour activer le fade
+    threshold: 0.1 // L'élément doit être à 50% visible pour activer le fade
 });
 
 // Sélectionner toutes les catégories à observer
