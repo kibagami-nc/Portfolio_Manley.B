@@ -1,3 +1,13 @@
+<?php
+
+$name = "Manley Bouille";
+$email = "manley.bouille@example.com";
+$message = "";
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <html>
