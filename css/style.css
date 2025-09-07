@@ -6,3 +6,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.category {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    margin: 50px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.category.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
