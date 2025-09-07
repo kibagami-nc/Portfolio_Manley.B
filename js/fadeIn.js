@@ -2,9 +2,7 @@
 const fadeInOnScroll = (entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // Ajouter la classe 'visible' quand l'élément est dans la vue
             entry.target.classList.add('visible');
-            // Optionnel : arrêter d'observer une fois que l'élément a été vu
             observer.unobserve(entry.target);
         }
     });
@@ -12,7 +10,7 @@ const fadeInOnScroll = (entries, observer) => {
 
 // Créer un observateur
 const observer = new IntersectionObserver(fadeInOnScroll, {
-    threshold: 0.1 // L'élément doit être à 50% visible pour activer le fade
+    threshold: 0.2
 });
 
 // Sélectionner toutes les catégories à observer

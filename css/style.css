@@ -9,7 +9,7 @@ html {
 .category {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 3s ease, transform 4s ease;
     margin: 50px 0;
     padding: 20px;
     border-radius: 8px;
