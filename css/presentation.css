@@ -22,7 +22,7 @@
     flex: 1;
     min-width: 300px;
     max-width: 600px;
-    height: auto;
+    height: 300px;
 }
 
 #presentation h2 {
