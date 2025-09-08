@@ -1,14 +1,3 @@
-/* Reset global */
-html, body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: #333533;
-}
-
-/* Conteneur principal */
 .certifications {
   min-height: 60vh;
   height: 60vh;
@@ -27,7 +16,6 @@ html, body {
   max-width: 900px;
 }
 
-/* Titre principal */
 .certifications h1 {
   font-size: 2.8em;
   margin: 0 0 1.5em 0;
@@ -35,7 +23,6 @@ html, body {
   user-select: none;
 }
 
-/* Liste des certifications */
 .certification-list {
   width: 100%;
   display: flex;
@@ -43,7 +30,6 @@ html, body {
   gap: 2em;
 }
 
-/* Item certification */
 .certification-item {
   background: #fff;
   border-radius: 12px;
@@ -55,13 +41,11 @@ html, body {
   color: #50534b;
 }
 
-/* Hover effet */
 .certification-item:hover {
   box-shadow: 0 8px 32px #0008;
   transform: translateY(-6px) scale(1.03);
 }
 
-/* Titre de certification */
 .certification-item h2 {
   font-size: 1.8em;
   margin-bottom: 0.6em;
@@ -70,7 +54,6 @@ html, body {
   user-select: none;
 }
 
-/* Description */
 .certification-item p {
   font-size: 1.2em;
   color: #333533;
@@ -79,7 +62,26 @@ html, body {
   line-height: 1.4em;
 }
 
-/* Responsive */
+.btn-voir-plus {
+    display: block;
+    margin: 2em auto 0 auto;
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    background: #F5CB5C;
+    color: #1b004e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0003;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-voir-plus:hover {
+    background: #1b004e;
+    color: #F5CB5C;
+}
+
 @media (max-width: 768px) {
   .certifications {
     padding: 2em 4vw;
