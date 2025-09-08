@@ -1,0 +1,119 @@
+/* Reset global */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333533;
+}
+
+/* Conteneur principal */
+.certifications {
+  min-height: 60vh;
+  height: 60vh;
+  padding: 0 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #CFDBD5;
+  border-radius: 16px;
+  box-shadow: 0 0 18px #0006;
+  margin: 3em auto;
+  max-width: 900px;
+}
+
+/* Titre principal */
+.certifications h1 {
+  font-size: 2.8em;
+  margin: 0 0 1.5em 0;
+  color: #333533;
+  user-select: none;
+}
+
+/* Liste des certifications */
+.certification-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Item certification */
+.certification-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.8em 2em;
+  box-shadow: 0 0 12px #0003;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+  text-align: left;
+  color: #50534b;
+}
+
+/* Hover effet */
+.certification-item:hover {
+  box-shadow: 0 8px 32px #0008;
+  transform: translateY(-6px) scale(1.03);
+}
+
+/* Titre de certification */
+.certification-item h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.6em;
+  color: #23b3a2;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Description */
+.certification-item p {
+  font-size: 1.2em;
+  color: #333533;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certifications {
+    padding: 2em 4vw;
+    height: auto;
+  }
+
+  .certifications h1 {
+    font-size: 2.4em;
+  }
+
+  .certification-item h2 {
+    font-size: 1.5em;
+  }
+
+  .certification-item p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications {
+    padding: 1.5em 3vw;
+    margin: 2em auto;
+  }
+
+  .certifications h1 {
+    font-size: 2em;
+  }
+
+  .certification-item h2 {
+    font-size: 1.3em;
+  }
+
+  .certification-item p {
+    font-size: 1em;
+  }
+}
