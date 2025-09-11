@@ -5,14 +5,23 @@ document.addEventListener("DOMContentLoaded", function() {
     icons.forEach(icon => {
         const infoBox = icon.querySelector('.lang-info-box');
         icon.addEventListener('mouseenter', () => {
-            bar.classList.add('paused');
+            // Arrêter toutes les animations
+            icons.forEach(allIcons => {
+                allIcons.style.animationPlayState = 'paused';
+            });
+            
             const lang = icon.getAttribute('data-lang');
             const desc = icon.getAttribute('data-desc');
             infoBox.innerHTML = `<strong>${lang}</strong><br><span>${desc}</span>`;
             infoBox.classList.add('active');
         });
+        
         icon.addEventListener('mouseleave', () => {
-            bar.classList.remove('paused');
+            // Reprendre toutes les animations
+            icons.forEach(allIcons => {
+                allIcons.style.animationPlayState = 'running';
+            });
+            
             infoBox.classList.remove('active');
         });
     });
