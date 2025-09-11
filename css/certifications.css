@@ -1,3 +1,12 @@
+/* 
+ * STYLES POUR LA PAGE CERTIFICATIONS
+ * Page secondaire affichant la liste détaillée des certifications
+ * Auteur: Manley.B
+ */
+
+/* ==================== SECTION CERTIFICATIONS ==================== */
+/* Configuration principale de la page certifications */
+
 .certifications {
   min-height: 60vh;
   height: 60vh;
@@ -23,12 +32,18 @@
   user-select: none;
 }
 
+/* ==================== LISTE DES CERTIFICATIONS ==================== */
+/* Layout pour afficher les différentes certifications */
+
 .certification-list {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
+
+/* ==================== CARTES DE CERTIFICATION ==================== */
+/* Styles pour chaque certification individuelle */
 
 .certification-item {
   background: #fff;
@@ -62,7 +77,9 @@
   line-height: 1.4em;
 }
 
-/* Style pour les boutons avec effet similaire aux icônes */
+/* ==================== BOUTONS D'ACTION ==================== */
+/* Styles pour les boutons de retour et autres actions */
+
 .btn-voir-plus {
     padding: 1em 2em;
     font-size: 1.1em;
@@ -85,6 +102,9 @@
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 6px 20px rgba(245, 203, 92, 0.4);
 }
+
+/* ==================== STYLES RESPONSIVES ==================== */
+/* Adaptations pour l'affichage sur tablettes et mobile */
 
 @media (max-width: 768px) {
   .certifications {

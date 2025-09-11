@@ -1,3 +1,12 @@
+/* 
+ * STYLES POUR LA SECTION CONTACT
+ * Formulaire de contact avec champs de saisie et validation
+ * Auteur: Manley.B
+ */
+
+/* ==================== SECTION CONTACT ==================== */
+/* Configuration principale de la section contact */
+
 #contact {
     min-height: 100vh;
     display: flex;
@@ -38,6 +47,12 @@
     backdrop-filter: blur(2px);
 }
 
+/* ==================== FORMULAIRE DE CONTACT ==================== */
+/* 
+ * Layout en flexbox pour le formulaire
+ * Styles unifiés pour tous les champs de saisie
+ */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -46,6 +61,9 @@
     max-width: 500px;
     margin-top: 2em;
 }
+
+/* ==================== CHAMPS DE SAISIE ==================== */
+/* Styles pour inputs, textarea avec focus states */
 
 .contact-form input,
 .contact-form textarea {
@@ -61,6 +79,9 @@
     min-height: 150px;
     resize: vertical;
 }
+
+/* ==================== BOUTON D'ENVOI ==================== */
+/* Style spécifique pour le bouton de soumission */
 
 .btn-submit {
     padding: 1em 2em;
@@ -85,6 +106,9 @@
     box-shadow: 0 6px 20px rgba(245, 203, 92, 0.4);
 }
 
+/* ==================== INFORMATIONS DE CONTACT ==================== */
+/* Section avec email et autres moyens de contact */
+
 .contact-info {
     margin-top: 2em;
     font-size: 1.2em;
@@ -100,6 +124,9 @@
 .contact-info a:hover {
     color: #F5CB5C;
 }
+
+/* ==================== STYLES RESPONSIVES ==================== */
+/* Adaptations du formulaire pour tablettes et mobile */
 
 @media (max-width: 57vh) {
     .contact-encadre {

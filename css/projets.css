@@ -1,3 +1,12 @@
+/* 
+ * STYLES POUR LA SECTION PROJETS
+ * Grille de cartes de projets avec images et descriptions
+ * Auteur: Manley.B
+ */
+
+/* ==================== SECTION PROJETS ==================== */
+/* Configuration principale de la section projets */
+
 #projets {
     min-height: 100vh;
     display: flex;
@@ -23,6 +32,12 @@
     margin-bottom: 1.5em;
 }
 
+/* ==================== GRILLE DE PROJETS ==================== */
+/* 
+ * Layout en grille CSS pour afficher les cartes de projets
+ * Auto-responsive avec repeat(auto-fit, minmax())
+ */
+
 .projets-flexbox {
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +46,9 @@
     align-items: stretch;
     margin: 2em 0;
 }
+
+/* ==================== CARTES DE PROJETS ==================== */
+/* Styles pour chaque carte de projet avec hover effects */
 
 .projet-card {
     background: #E8EDDF;
@@ -50,6 +68,9 @@
     box-shadow: 0 8px 32px #0008;
 }
 
+/* ==================== IMAGES DES PROJETS ==================== */
+/* Configuration des images avec object-fit pour un aspect uniforme */
+
 .projet-img {
     width: 100%;
     max-width: 220px;
@@ -59,19 +80,8 @@
     box-shadow: 0 2px 12px #0004;
 }
 
-.projet-card h3 {
-    margin: 0.5em 0 0.5em 0;
-    font-size: 1.3em;
-    color: #242423;
-    text-align: center;
-}
-
-.projet-card p {
-    font-size: 1em;
-    color: #e0e0e0;
-    text-align: center;
-    margin-bottom: 1em;
-}
+/* ==================== BOUTON VOIR PLUS ==================== */
+/* Style pour le bouton menant vers GitHub */
 
 .btn-voir-plus {
     display: block;
@@ -97,6 +107,9 @@
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 6px 20px rgba(245, 203, 92, 0.4);
 }
+
+/* ==================== STYLES RESPONSIVES ==================== */
+/* Adaptations de la grille pour tablettes et mobile */
 
 .projets-encadre {
     width: 100%;

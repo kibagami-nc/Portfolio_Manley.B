@@ -1,4 +1,13 @@
-// Animation de la topbar et gestion du menu
+/* 
+ * SCRIPTS JAVASCRIPT POUR LA BARRE DE NAVIGATION
+ * Gestion du menu déroulant avec animations et fermeture automatique
+ * Auteur: Manley.B
+ */
+
+/**
+ * INITIALISATION DU MENU RESPONSIVE
+ * Configuration des événements pour l'ouverture/fermeture du menu
+ */
 
 document.addEventListener('DOMContentLoaded', function() {
     const topbar = document.getElementById('topbar');
@@ -31,10 +40,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    /**
+     * FONCTION DE BASCULEMENT DU MENU
+     * Toggle de la classe 'open' pour déclencher les animations CSS
+     */
     // Ouvre/ferme le menu au clic
     toggle.addEventListener('click', function() {
         menu.classList.toggle('open');
     });
+
+    /**
+     * FERMETURE AUTOMATIQUE DU MENU
+     * Détection des clics en dehors du menu pour le fermer automatiquement
+     */
 
     // Gestion du clic sur les liens du menu
     menu.querySelectorAll('a').forEach(link => {
@@ -45,6 +63,10 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.remove('open');
             topbar.style.top = '-90px';
 
+            /**
+             * NAVIGATION FLUIDE VERS LES SECTIONS
+             * Gestion des liens d'ancrage avec fermeture automatique du menu
+             */
             // Scroll fluide et effet zoom sur la section ciblée
             const targetId = link.getAttribute('href').replace('#', '');
             const section = document.getElementById(targetId);

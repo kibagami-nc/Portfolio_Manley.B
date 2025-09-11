@@ -1,3 +1,12 @@
+/* 
+ * STYLES POUR LA SECTION COMPÉTENCES ET CERTIFICATIONS
+ * Gestion des icônes de technologies avec info-boxes et section certifications
+ * Auteur: Manley.B
+ */
+
+/* ==================== SECTION PRINCIPALE ==================== */
+/* Configuration de la section compétences et certifications */
+
 #competence_certifs {
     min-height: 50vh;
     display: flex;
@@ -23,6 +32,12 @@
     margin-top: 0.5em;
     margin-bottom: 1.5em;
 }
+
+/* ==================== BARRE D'ICÔNES ANIMÉE ==================== */
+/* 
+ * Conteneur pour les icônes de technologies avec défilement horizontal
+ * Animation automatique des icônes avec keyframes CSS
+ */
 
 .lang-icons-bar-moving {
     user-select: none;
@@ -72,6 +87,9 @@
     }
 }
 
+/* ==================== ICÔNES DE TECHNOLOGIES ==================== */
+/* Styles pour chaque icône de technologie avec hover effects */
+
 .lang-icon img {
     width: 100px;
     height: 80px;
@@ -84,6 +102,12 @@
     user-select: none;
     transform: scale(1.15);
 }
+
+/* ==================== INFO-BOXES INTERACTIVES ==================== */
+/* 
+ * Boîtes d'information qui apparaissent au survol des icônes
+ * Positionnement dynamique pour éviter les débordements d'écran
+ */
 
 .lang-info-box {
     position: absolute;
@@ -109,6 +133,68 @@
     opacity: 1;
     pointer-events: auto;
 }
+
+/* ==================== SECTION CERTIFICATIONS ==================== */
+/* Layout en flexbox pour le texte et le bouton certifications */
+
+.certif-flexbox {
+    max-width: 700px;
+    min-width: 0px;
+    background: #CFDBD5;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em;
+    margin: 2em auto 0 auto;
+    width: 100%;
+    gap: 2em;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0003;
+}
+
+
+.certif-texte {
+    flex: 0.8;
+    text-align: center;
+}
+
+.certif-texte h3 {
+    margin: 0 0 0.5em 0;
+    color: #242423;
+    font-size: 1.3em;
+}
+
+.certif-texte p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.btn-voir-certif {
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    background: rgba(40, 40, 40, 0.9);
+    color: #F5CB5C;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-left: 2em;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.btn-voir-certif:hover {
+    background: #F5CB5C;
+    color: #1a1a1a;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 15px rgba(245, 203, 92, 0.4);
+}
+
+/* ==================== STYLES RESPONSIVES ==================== */
+/* Adaptations pour tablettes et mobile avec repositionnement des éléments */
 
 @media (max-width: 57vh) {
     @keyframes scroll-icons {
@@ -170,60 +256,4 @@
         margin-top: 0em;
         width: 100%;
     }
-}
-
-.certif-flexbox {
-    max-width: 700px;
-    min-width: 0px;
-    background: #CFDBD5;
-    user-select: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5em 2em;
-    margin: 2em auto 0 auto;
-    width: 100%;
-    gap: 2em;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px #0003;
-}
-
-
-.certif-texte {
-    flex: 0.8;
-    text-align: center;
-}
-
-.certif-texte h3 {
-    margin: 0 0 0.5em 0;
-    color: #242423;
-    font-size: 1.3em;
-}
-
-.certif-texte p {
-    margin: 0;
-    font-size: 1.1em;
-}
-
-.btn-voir-certif {
-    padding: 0.8em 2em;
-    font-size: 1.1em;
-    background: rgba(40, 40, 40, 0.9);
-    color: #F5CB5C;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    margin-left: 2em;
-    text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
-}
-
-.btn-voir-certif:hover {
-    background: #F5CB5C;
-    color: #1a1a1a;
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 4px 15px rgba(245, 203, 92, 0.4);
 }

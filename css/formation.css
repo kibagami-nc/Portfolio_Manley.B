@@ -1,3 +1,12 @@
+/* 
+ * STYLES POUR LA SECTION FORMATION
+ * Affichage des parcours professionnel et scolaire en colonnes
+ * Auteur: Manley.B
+ */
+
+/* ==================== SECTION FORMATION ==================== */
+/* Configuration principale de la section formation */
+
 html, body {
   overflow-x: hidden;
   margin: 0;
@@ -41,6 +50,12 @@ html, body {
   width: 100%;
   position: static;
 }
+
+/* ==================== LAYOUT EN COLONNES ==================== */
+/* 
+ * Organisation en deux colonnes : professionnelle et scolaire
+ * Utilise flexbox pour un layout responsive
+ */
 
 .experience-professionnelle {
   user-select: none;
@@ -87,6 +102,9 @@ html, body {
   gap: 1.2em;
 }
 
+/* ==================== CARTES DE PARCOURS ==================== */
+/* Styles pour chaque étape du parcours (stage, études, etc.) */
+
 .contenu-parcours-scolaire-1,
 .contenu-parcours-scolaire-2 {
   display: flex;
@@ -113,6 +131,9 @@ html, body {
   font-weight: 500;
   text-align: left;
 }
+
+/* ==================== TITRES ET CONTENU ==================== */
+/* Hiérarchie typographique pour les postes et descriptions */
 
 .formation-flex {
   display: flex;
@@ -166,6 +187,9 @@ html, body {
   margin: 0 0 1.2em 0;
   font-weight: 500;
 }
+
+/* ==================== STYLES RESPONSIVES ==================== */
+/* Passage en layout vertical sur tablettes et mobile */
 
 @media (max-width: 57vh) {
   .colonne-pro h3, .colonne-sco h3 {

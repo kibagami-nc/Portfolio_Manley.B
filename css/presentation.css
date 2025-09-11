@@ -1,3 +1,12 @@
+/* 
+ * STYLES POUR LA SECTION PRÉSENTATION
+ * Layout en deux colonnes avec image et contenu textuel
+ * Auteur: Manley.B
+ */
+
+/* ==================== SECTION PRÉSENTATION ==================== */
+/* Configuration en flexbox pour layout image + texte */
+
 #presentation {
     background: linear-gradient(to right, #00000000, #CFDBD5, #00000000);
     margin-left: auto;
@@ -13,6 +22,9 @@
     text-align: center;
     box-sizing: border-box;
 }
+
+/* ==================== CONTENU TEXTUEL ==================== */
+/* Styles pour le texte de présentation et le bouton CV */
 
 .presentation-content {
     display: flex;
@@ -41,6 +53,9 @@
     max-width: 35em;
 }
 
+/* ==================== IMAGE DE PROFIL ==================== */
+/* Styles pour la photo de profil avec effets */
+
 #presentation img {
   user-select: none;
     flex: 0 0 auto;
@@ -51,7 +66,9 @@
     display: block;
 }
 
-/* Style pour le bouton CV avec effet similaire au sous-menu */
+/* ==================== BOUTON CV ==================== */
+/* Style spécifique pour le bouton de téléchargement du CV */
+
 .btn-CV {
     padding: 1em 2em;
     font-size: 1.1em;
@@ -74,6 +91,9 @@
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 6px 20px rgba(245, 203, 92, 0.4);
 }
+
+/* ==================== STYLES RESPONSIVES ==================== */
+/* Adaptations pour tablettes et mobile avec réorganisation du layout */
 
 @media (max-width: 57vh) {
   #presentation {

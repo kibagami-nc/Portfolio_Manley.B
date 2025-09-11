@@ -1,3 +1,12 @@
+/* 
+ * STYLES POUR LE FOOTER
+ * Pied de page avec copyright et icônes de réseaux sociaux
+ * Auteur: Manley.B
+ */
+
+/* ==================== FOOTER PRINCIPAL ==================== */
+/* Configuration de base du pied de page */
+
 footer {
     background-color: #282828;
     color: #fff;
@@ -10,6 +19,9 @@ footer {
     margin: 0 auto;
     padding: 20px;
 }
+
+/* ==================== CONTENU DU FOOTER ==================== */
+/* Layout en flexbox pour organiser copyright et réseaux sociaux */
 
 .footer-content {
     display: flex;
@@ -24,6 +36,12 @@ footer p {
     font-size: 1em;
     color: #CFDBD5;
 }
+
+/* ==================== ICÔNES RÉSEAUX SOCIAUX ==================== */
+/* 
+ * Styles pour les icônes sociales avec effets hover élégants
+ * Design circulaire avec bordures et animations
+ */
 
 .social-links {
     display: flex;
@@ -47,6 +65,9 @@ footer p {
     text-decoration: none;
 }
 
+/* ==================== EFFETS HOVER ==================== */
+/* Animations au survol des icônes avec transform et color change */
+
 .social-icon:hover {
     color: #F5CB5C;
     background: rgba(245, 203, 92, 0.2);
@@ -54,11 +75,13 @@ footer p {
     transform: translateY(-3px) scale(1.1);
 }
 
+/* ==================== STYLES RESPONSIVES ==================== */
+/* Adaptations pour tablettes et mobile avec centrage du contenu */
+
 .fab, .fas {
     font-size: 1em;
 }
 
-/* Responsive */
 @media (max-width: 57vh) {
     .social-links {
         flex-wrap: wrap;

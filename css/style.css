@@ -1,10 +1,32 @@
+/* 
+ * FICHIER CSS PRINCIPAL DU PORTFOLIO
+ * Contient les styles globaux et les reset CSS
+ * Auteur: Manley.B
+ */
+
+/* ==================== RESET CSS ==================== */
+/* Supprime les marges et paddings par défaut de tous les éléments */
+
 body {
-    background: #e9ece2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* ==================== CONFIGURATION GLOBALE ==================== */
+/* Configuration de base du document avec défilement fluide */
 
 html {
     scroll-behavior: smooth;
 }
+
+/* ==================== SECTIONS PRINCIPALES ==================== */
+/* Style pour toutes les sections principales du portfolio */
+/* Chaque section prend au minimum la hauteur de la fenêtre */
 
 .category {
     opacity: 0;
@@ -20,7 +42,33 @@ html {
     transform: translateY(0);
 }
 
-/* Styles globaux pour les boutons avec effet similaire aux icônes */
+/* ==================== TYPOGRAPHIE ==================== */
+/* Hiérarchie des titres et styles de texte */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+/* ==================== STYLES GLOBAUX DES BOUTONS ==================== */
+/* 
+ * Styles unifiés pour tous les boutons du site
+ * Design moderne avec fond gris, texte doré et effets de survol
+ */
+
 button, .btn-CV, .btn-voir-plus, .btn-voir-certif, .btn-submit {
     background: rgba(40, 40, 40, 0.9);
     color: #F5CB5C;
@@ -42,3 +90,6 @@ button:hover, .btn-CV:hover, .btn-voir-plus:hover, .btn-voir-certif:hover, .btn-
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 6px 20px rgba(245, 203, 92, 0.4);
 }
+
+/* ==================== STYLES RESPONSIVES ==================== */
+/* Media queries pour l'adaptation aux différentes tailles d'écran */
