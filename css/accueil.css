@@ -52,8 +52,8 @@
 
 #accueil img {
     flex: 0 0 320px;
-    max-width: 35vw;
-    width: 620px;
+    max-width: 500vw;
+    width: 500px;
     height: auto;
     border-radius: 100em;
     margin: 0;
