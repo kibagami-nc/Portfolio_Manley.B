@@ -78,23 +78,24 @@
     margin: 2em auto 0 auto;
     padding: 1em 2em;
     font-size: 1.1em;
-    background: rgba(245, 203, 92, 0.1);
+    background: rgba(40, 40, 40, 0.9);
     color: #F5CB5C;
-    border: 1px solid rgba(245, 203, 92, 0.3);
     border-radius: 8px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
 }
 
 .btn-voir-plus:hover {
     background: #F5CB5C;
-    color: #242423;
+    color: #1a1a1a;
     border-color: #F5CB5C;
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 6px 20px rgba(245, 203, 92, 0.3);
+    box-shadow: 0 6px 20px rgba(245, 203, 92, 0.4);
 }
 
 .projets-encadre {
