@@ -63,21 +63,25 @@
 }
 
 .btn-submit {
-    padding: 0.8em 2em;
+    padding: 1em 2em;
     font-size: 1.1em;
-    background: #F5CB5C;
-    color: #1b004e;
-    border: none;
+    background: rgba(245, 203, 92, 0.1);
+    color: #F5CB5C;
+    border: 1px solid rgba(245, 203, 92, 0.3);
     border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0 2px 8px #0003;
-    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-submit:hover {
-    background: #1b004e;
-    color: #F5CB5C;
+    background: #F5CB5C;
+    color: #242423;
+    border-color: #F5CB5C;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(245, 203, 92, 0.3);
 }
 
 .contact-info {

@@ -19,3 +19,25 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Styles globaux pour les boutons avec effet similaire aux icônes */
+button, .btn-CV, .btn-voir-plus, .btn-voir-certif, .btn-submit {
+    background: rgba(245, 203, 92, 0.1);
+    color: #F5CB5C;
+    border: 1px solid rgba(245, 203, 92, 0.3);
+    border-radius: 8px;
+    padding: 1em 2em;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+button:hover, .btn-CV:hover, .btn-voir-plus:hover, .btn-voir-certif:hover, .btn-submit:hover {
+    background: #F5CB5C;
+    color: #242423;
+    border-color: #F5CB5C;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(245, 203, 92, 0.3);
+}
