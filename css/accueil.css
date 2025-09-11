@@ -55,7 +55,7 @@
     max-width: 35vw;
     width: 620px;
     height: auto;
-    border-radius: 10em;
+    border-radius: 100em;
     margin: 0;
     display: block;
 }
@@ -103,6 +103,66 @@
     100% {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+/* ==================== ANIMATION LETTRES ALÉATOIRES ==================== */
+/* 
+ * Animation spéciale pour le texte d'accueil
+ * Les lettres apparaissent aléatoirement avant de former le texte final
+ */
+
+.scramble-text {
+    overflow: hidden;
+    position: relative;
+    opacity: 0; /* Invisible par défaut */
+}
+
+.scramble-text.ready {
+    opacity: 1; /* Visible une fois l'animation préparée */
+}
+
+.scramble-text .letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-fill-mode: forwards;
+}
+
+.scramble-text .letter.animate {
+    animation: scrambleLetter 0.8s ease-out forwards;
+}
+
+@keyframes scrambleLetter {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) rotateX(90deg);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+/* Animation pour le conteneur de texte */
+.text-reveal {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
