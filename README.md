@@ -89,10 +89,6 @@ cd Portfolio_Manley.B
 - **GitHub** : [@kibagami-nc](https://github.com/kibagami-nc)
 - **Email** : manley-bouille@outlook.fr
 
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
 ---
 
 ⭐ **N'hésitez pas à mettre une étoile si ce projet vous plaît !**
