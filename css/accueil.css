@@ -15,7 +15,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8vw;
+    padding: 6em 8vw;
     gap: 3em;
     text-align: left;
     box-sizing: border-box;
@@ -51,9 +51,10 @@
 /* Styles pour le logo/avatar de la page d'accueil */
 
 #accueil img {
-    flex: 0 0 320px;
-    max-width: 500vw;
-    width: 500px;
+    flex: 0 0 auto;
+    max-width: 500px;
+    width: 40vw;
+    min-width: 200px;
     height: auto;
     border-radius: 100em;
     margin: 0;
@@ -172,18 +173,18 @@
 
 @media (max-width: 57vh) {
     #accueil {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
     padding: 6em 2vw 2em 2vw;
-    gap: 0em;
+    gap: 2em;
     height: auto;
     min-height:100vh;
 }
 
     #accueil .accueil-texte {
-    margin-top: 50%;
+    margin-top: 2em;
     user-select: none;
     flex: 1 1 0;
     min-width: 250px;
@@ -206,8 +207,10 @@
 }
 
     #accueil img {
-    width: 0;
-    min-width: 0;
+    margin-top: 15vh;
+    width: 60vw;
+    max-width: 300px;
+    min-width: 150px;
 }
 
   .arrow {

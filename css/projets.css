@@ -133,8 +133,12 @@
     }
     .projet-card {
         width: 90vw;
-        max-width: 400px;
-        min-width: 400px;
+        max-width: 500px;
+        min-width: 500px;
+        padding: 3em 2em;
+    }
+    .projet-card:nth-child(n+4) {
+        display: none;
     }
     .projets-encadre {
         margin-top: 15em;
