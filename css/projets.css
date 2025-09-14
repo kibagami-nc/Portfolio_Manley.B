@@ -77,6 +77,7 @@
 .projet-img {
     width: 100%;
     max-width: 220px;
+    height: 200px;
     border-radius: 12px;
     margin-bottom: 1em;
     object-fit: cover;
