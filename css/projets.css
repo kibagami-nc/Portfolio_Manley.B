@@ -19,6 +19,7 @@
 }
 
 #projets h2 {
+    user-select: none;
     font-size: 1.5em;
     color: #000000;
     margin-top: 1.5em;
@@ -52,7 +53,7 @@
 
 .projet-card {
     background: #E8EDDF;
-    color: #fff;
+    color: #000000;
     border-radius: 18px;
     box-shadow: 0 4px 18px #0006;
     padding: 2em 1.5em;
@@ -60,13 +61,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-    opacity: 1; /* Force l'affichage pour la section projets */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .projet-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 32px #0008;
+    transform: translateY(-12px) scale(1.08);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
 
 /* ==================== IMAGES DES PROJETS ==================== */
@@ -85,6 +87,7 @@
 /* Style pour le bouton menant vers GitHub */
 
 .btn-voir-plus {
+    user-select: none;
     display: block;
     margin: 2em auto 0 auto;
     padding: 1em 2em;
@@ -137,6 +140,12 @@
         max-width: 500px;
         min-width: 500px;
         padding: 3em 2em;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .projet-card:hover {
+        transform: translateY(-15px) scale(1.06);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.25);
     }
     .projet-card:nth-child(n+4) {
         display: none;

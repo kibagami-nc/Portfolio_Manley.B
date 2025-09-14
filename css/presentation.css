@@ -8,6 +8,7 @@
 /* Configuration en flexbox pour layout image + texte */
 
 #presentation {
+    user-select: none;
     background: linear-gradient(to right, #00000000, #CFDBD5, #00000000);
     margin-left: auto;
     margin-right: auto;
