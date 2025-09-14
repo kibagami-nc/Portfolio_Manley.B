@@ -107,6 +107,10 @@
     }
     
     .pix-category .category-header h3 {
-        font-size: 3em;
+        font-size: 1.5em;
+    }
+
+    .pix-btn {
+        font-size: 1.1em;
     }
 }

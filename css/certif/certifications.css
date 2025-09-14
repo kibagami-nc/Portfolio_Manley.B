@@ -427,29 +427,49 @@
         min-height: 60vh;
     }
 
+    .arrow {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: rotate(deg);
+        cursor: pointer;
+    }
+
+    .arrow span {
+        display: block;
+        width: 2.5vw;
+        height: 2.5vw;
+        border-bottom: 5px solid #333533;
+        border-right: 5px solid #333533;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+
     .certifications-content {
         align-items: center;
         text-align: center;
     }
 
     #certifications-hero h1 {
-        font-size: 5.5em;
-        margin-bottom: 20px;
+        font-size: 2.5em;
+        margin-top: 50px;
     }
 
     #certifications-hero p {
-        font-size: 3em;
+        font-size: 1em;
     }
 
     .certifications-image {
-        width: 60vw;
+        width: 50vw;
         max-width: 300px;
         min-width: 150px;
     }
 
     /* Section liste responsive */
     #certifications-list h2 {
-        font-size: 4em;
+        font-size: 2.5em;
     }
 
     .certifications-encadre {
@@ -478,12 +498,12 @@
     }
 
     .category-header h3 {
-        font-size: 3em;
+        font-size: 1em;
     }
 
     .certifications-grid {
         grid-template-columns: 1fr;
-        gap: 2em;
+        gap: 1em;
     }
 
     .certification-card {
@@ -492,22 +512,22 @@
 
     .certification-card h3,
     .certification-card h4 {
-        font-size: 2.8em;
+        font-size: 1.8em;
     }
 
     .cert-level {
-        font-size: 2.2em;
+        font-size: 1.2em;
         padding: 0.5em 1.5em;
     }
 
     .cert-description {
-        font-size: 2.4em;
+        font-size: 1.4em;
         line-height: 1.4;
     }
 
     .cert-date,
     .cert-score {
-        font-size: 2em;
+        font-size: 1.5em;
         padding: 0.5em 1em;
     }
 
@@ -524,8 +544,8 @@
 
     .btn-retour,
     .btn-contact {
-        font-size: 2.5em;
-        padding: 1.2em 2.5em;
+        font-size: 1em;
+        padding: 1.7em;
         width: 100%;
         max-width: 400px;
     }
@@ -535,4 +555,5 @@
         width: 120px;
         height: 120px;
     }
+    
 }

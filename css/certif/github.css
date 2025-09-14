@@ -105,8 +105,9 @@
         width: 80px;
         height: 80px;
     }
-    
-    .github-category .category-header h3 {
-        font-size: 3em;
+
+    .github-btn {
+        font-size: 1.1em;
     }
+
 }

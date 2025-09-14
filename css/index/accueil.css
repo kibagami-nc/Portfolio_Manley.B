@@ -26,6 +26,7 @@
 
 #accueil .accueil-texte {
     user-select: none;
+    height: 35vh;
     flex: 1 1 0;
     min-width: 250px;
 }
@@ -42,7 +43,7 @@
 }
 
 #accueil #accroche {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #666b68;
     margin-top: 10px;
 }
@@ -54,9 +55,9 @@
     flex: 0 0 auto;
     max-width: 500px;
     width: 40vw;
-    min-width: 200px;
+    min-width: 400px;
     height: auto;
-    border-radius: 100em;
+    border-radius: 110em;
     margin: 0;
     display: block;
 }
