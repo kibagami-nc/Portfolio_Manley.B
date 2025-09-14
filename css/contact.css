@@ -133,7 +133,7 @@
 
 @media (max-width: 57vh) {
     .contact-encadre {
-        margin-top: -20em;
+        margin-top: 2em;
         padding: 0.5em 0.5em 0.5em 0.5em;
         border-radius: 18px;
     }
