@@ -50,6 +50,52 @@
     display: block;
 }
 
+/* ==================== FLÈCHE DE NAVIGATION ==================== */
+/* Animation CSS pure pour la flèche indicatrice de défilement */
+/* Créée avec des spans stylisés et des animations keyframes */
+
+.arrow {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid #333533;
+    border-right: 5px solid #333533;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
 /* ==================== SECTION LISTE DES CERTIFICATIONS ==================== */
 /* Container principal avec le même style que les autres sections */
 
@@ -91,11 +137,71 @@
 /* Layout similaire aux cartes de projets */
 
 .certifications-grid {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2.5em;
     width: 100%;
-    margin: 2em 0;
+    margin: 0;
+    align-content: start;
+}
+
+/* ==================== CATÉGORIES DE CERTIFICATIONS ==================== */
+/* Container pour chaque plateforme */
+
+.certification-category {
+    margin: 4em 0;
+    padding: 2.5em 2em;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 2.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+}
+
+.platform-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    object-fit: contain;
+    background: #ffffff;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.category-header h3 {
+    color: #ffffff;
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.certifications-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5em;
+    width: 100%;
+    margin: 0;
+    align-content: start;
 }
 
 /* ==================== CARTES DE CERTIFICATIONS ==================== */
@@ -150,7 +256,14 @@
 .certification-card h3 {
     font-size: 1.4em;
     margin-bottom: 0.5em;
-    color: #333533;
+    color: #1e40af;
+    font-weight: bold;
+}
+
+.certification-card h4 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+    color: #1e40af;
     font-weight: bold;
 }
 
@@ -308,6 +421,29 @@
         border-radius: 18px;
     }
 
+    .certification-category {
+        min-height: auto;
+        margin: 3em 0;
+        padding: 2em 1em;
+    }
+
+    .category-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        margin-bottom: 2em;
+    }
+
+    .platform-logo {
+        width: 80px;
+        height: 80px;
+        font-size: 1.4em;
+    }
+
+    .category-header h3 {
+        font-size: 3em;
+    }
+
     .certifications-grid {
         grid-template-columns: 1fr;
         gap: 2em;
@@ -317,7 +453,8 @@
         padding: 3em 2em;
     }
 
-    .certification-card h3 {
+    .certification-card h3,
+    .certification-card h4 {
         font-size: 2.8em;
     }
 

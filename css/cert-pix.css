@@ -1,0 +1,112 @@
+/* 
+ * STYLES POUR CATÉGORIE PIX
+ * Design spécifique pour les certifications PIX
+ * Auteur: Manley.B
+ */
+
+/* ==================== CATÉGORIE PIX ==================== */
+
+.pix-category {
+    margin: 3em 0;
+    padding: 2em;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    border-radius: 20px;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pix-category .category-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.pix-category .platform-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 8px;
+}
+
+.pix-category .category-header h3 {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* ==================== CARTES PIX ==================== */
+
+.pix-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    border: 2px solid rgba(59, 130, 246, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.pix-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.pix-card .cert-icon {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: #ffffff;
+    border: none;
+}
+
+.pix-card .cert-level {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+    color: #1e40af;
+    border: 1px solid rgba(30, 58, 138, 0.2);
+}
+
+.pix-card h4 {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+/* ==================== BOUTON PIX ==================== */
+
+.pix-btn {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: #ffffff;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.pix-btn:hover {
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
+}
+
+/* ==================== RESPONSIVE PIX ==================== */
+
+@media (max-width: 57vh) {
+    .pix-category .category-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+    
+    .pix-category .platform-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .pix-category .category-header h3 {
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,112 @@
+/* 
+ * STYLES POUR CATÉGORIE OPENCLASSROOMS
+ * Design spécifique pour les certifications OpenClassrooms
+ * Auteur: Manley.B
+ */
+
+/* ==================== CATÉGORIE OPENCLASSROOMS ==================== */
+
+.openclassrooms-category {
+    margin: 3em 0;
+    padding: 2em;
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    border-radius: 20px;
+    border: 2px solid rgba(168, 85, 247, 0.3);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.openclassrooms-category .category-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.openclassrooms-category .platform-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 8px;
+}
+
+.openclassrooms-category .category-header h3 {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* ==================== CARTES OPENCLASSROOMS ==================== */
+
+.openclassrooms-card {
+    background: linear-gradient(135deg, #ffffff 0%, #faf5ff 100%);
+    border: 2px solid rgba(168, 85, 247, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.openclassrooms-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #7c3aed 0%, #a855f7 100%);
+}
+
+.openclassrooms-card .cert-icon {
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    color: #ffffff;
+    border: none;
+}
+
+.openclassrooms-card .cert-level {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+    color: #7c2d12;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.openclassrooms-card h4 {
+    color: #7c3aed;
+    font-weight: bold;
+}
+
+/* ==================== BOUTON OPENCLASSROOMS ==================== */
+
+.openclassrooms-btn {
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    color: #ffffff;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.openclassrooms-btn:hover {
+    background: linear-gradient(135deg, #a855f7 0%, #c084fc 100%);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+}
+
+/* ==================== RESPONSIVE OPENCLASSROOMS ==================== */
+
+@media (max-width: 57vh) {
+    .openclassrooms-category .category-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+    
+    .openclassrooms-category .platform-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .openclassrooms-category .category-header h3 {
+        font-size: 3em;
+    }
+}

@@ -7,6 +7,10 @@
     
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/certifications.css"/>
+    <link rel="stylesheet" href="./css/cert-pix.css"/>
+    <link rel="stylesheet" href="./css/cert-openclassrooms.css"/>
+    <link rel="stylesheet" href="./css/cert-github.css"/>
+    <link rel="stylesheet" href="./css/cert-coursera.css"/>
     <link rel="stylesheet" href="./css/topbar.css"/>
     <link rel="stylesheet" href="./css/footer.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -21,12 +25,6 @@
             <button id="menu-toggle" aria-label="Ouvrir le menu">Menu ☰</button>
             <ul class="menu" id="menu-list">
                 <li><a onclick="window.location.href='./index.html#competence_certifs'">Retour Portfolio</a></li>
-                <li><a href="./index.html#accueil">Accueil</a></li>
-                <li><a href="./index.html#presentation">À propos</a></li>
-                <li><a href="./index.html#formation">Formation</a></li>
-                <li><a href="./index.html#competence_certifs">Compétences</a></li>
-                <li><a href="./index.html#projets">Projets</a></li>
-                <li><a href="./index.html#contact">Contact</a></li>
             </ul>
         </nav>
         <script src="./js/topbar.js"></script>
@@ -41,88 +39,123 @@
                 </p>
             </div>
             <img src="./img/il_pfp_pres.png" alt="Certifications Manley" class="certifications-image" />
+
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
         </section>
 
         <section id="certifications-list" class="category">
+        <section id="certifications-list" class="category">
             <div class="certifications-encadre">
-                <h2>Certifications Obtenues 🏆</h2>
+                <h2>Mes Certifications par Plateforme 🏆</h2>
                 
-                <div class="certifications-grid">
-                    <div class="certification-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h3>Certification PIX</h3>
-                        <p class="cert-level">test</p>
-                        <p class="cert-description">
-                            Certification des compétences numériques dans les domaines de l'information, 
-                            la communication, la création de contenu, la protection et la résolution de problèmes.
-                        </p>
-                        <div class="cert-details">
-                            <span class="cert-date">📅 test</span>
-                            <span class="cert-score">🏅 test</span>
-                        </div>
-                        <button class="btn-voir-certif" onclick="window.open('#', '_blank')">
-                            <i class="fas fa-external-link-alt"></i> Voir la certification
-                        </button>
+                <!-- Catégorie PIX -->
+                <div class="certification-category pix-category">
+                    <div class="category-header">
+                        <div class="platform-logo">PIX</div>
+                        <h3>PIX - Compétences Numériques</h3>
                     </div>
-
-                    <div class="certification-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-code"></i>
+                    <div class="certifications-grid">
+                        <div class="certification-card pix-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>Certification PIX</h4>
+                            <p class="cert-level">Niveau Expert</p>
+                            <p class="cert-description">
+                                Certification des compétences numériques dans les domaines de l'information, 
+                                la communication, la création de contenu, la protection et la résolution de problèmes.
+                            </p>
+                            <div class="cert-details">
+                                <span class="cert-date">📅 Obtenue en 2024</span>
+                                <span class="cert-score">🏅 Score: 850/1024</span>
+                            </div>
+                            <button class="btn-voir-certif pix-btn" onclick="window.location.href='#'">
+                                <i class="fas fa-external-link-alt"></i> Voir la certification PIX
+                            </button>
                         </div>
-                        <h3>test</h3>
-                        <p class="cert-level">test</p>
-                        <p class="cert-description">
-                            test
-                        </p>
-                        <div class="cert-details">
-                            <span class="cert-date">📅 test</span>
-                            <span class="cert-score">🏅 test</span>
-                        </div>
-                        <button class="btn-voir-certif" onclick="window.open('#', '_blank')">
-                            <i class="fas fa-external-link-alt"></i> Voir la certification
-                        </button>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="cert-icon">
-                            <i class="fab fa-git-alt"></i>
-                        </div>
-                        <h3>Git & GitHub Fundamentals</h3>
-                        <p class="cert-level">test</p>
-                        <p class="cert-description">
-                            Maîtrise des outils de versioning avec Git, gestion des branches, 
-                            collaboration sur GitHub et workflows de développement.
-                        </p>
-                        <div class="cert-details">
-                            <span class="cert-date">📅 test</span>
-                            <span class="cert-score">🏅 test</span>
-                        </div>
-                        <button class="btn-voir-certif" onclick="window.open('#', '_blank')">
-                            <i class="fas fa-external-link-alt"></i> Voir la certification
-                        </button>
-                    </div>
-
-                    <div class="certification-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3>test</h3>
-                        <p class="cert-level">test</p>
-                        <p class="cert-description">
-                            test
-                        </p>
-                        <div class="cert-details">
-                            <span class="cert-date">📅 test</span>
-                            <span class="cert-score">🏅 test</span>
-                        </div>
-                        <button class="btn-voir-certif" onclick="window.open('#', '_blank')">
-                            <i class="fas fa-external-link-alt"></i> Voir la certification
-                        </button>
                     </div>
                 </div>
 
+                <!-- Catégorie OpenClassrooms -->
+                <div class="certification-category openclassrooms-category">
+                    <div class="category-header">
+                        <div class="platform-logo">OC</div>
+                        <h3>OpenClassrooms - Formation en ligne</h3>
+                    </div>
+                    <div class="certifications-grid">
+                        <div class="certification-card openclassrooms-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Introduction au Développement Web</h4>
+                            <p class="cert-level">Niveau Intermédiaire</p>
+                            <p class="cert-description">
+                                Formation complète sur les technologies web : HTML5, CSS3, JavaScript, 
+                                responsive design et bonnes pratiques de développement.
+                            </p>
+                            <div class="cert-details">
+                                <span class="cert-date">📅 Obtenue en 2024</span>
+                                <span class="cert-score">🏅 Mention Bien</span>
+                            </div>
+                            <button class="btn-voir-certif openclassrooms-btn" onclick="window.location.href='#'">
+                                <i class="fas fa-external-link-alt"></i> Voir sur OpenClassrooms
+                            </button>
+                        </div>
+                        
+                        <div class="certification-card openclassrooms-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h4>Apprenez à programmer en JavaScript</h4>
+                            <p class="cert-level">Niveau Débutant</p>
+                            <p class="cert-description">
+                                Formation sur les bases du JavaScript : variables, fonctions, DOM, 
+                                événements et programmation orientée objet.
+                            </p>
+                            <div class="cert-details">
+                                <span class="cert-date">📅 Obtenue en 2023</span>
+                                <span class="cert-score">� Certification Validée</span>
+                            </div>
+                            <button class="btn-voir-certif openclassrooms-btn" onclick="window.location.href='#'">
+                                <i class="fas fa-external-link-alt"></i> Voir sur OpenClassrooms
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catégorie GitHub -->
+                <div class="certification-category github-category">
+                    <div class="category-header">
+                        <div class="platform-logo">GH</div>
+                        <h3>GitHub - Versioning et Collaboration</h3>
+                    </div>
+                    <div class="certifications-grid">
+                        <div class="certification-card github-card">
+                            <div class="cert-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git & GitHub Fundamentals</h4>
+                            <p class="cert-level">Niveau Confirmé</p>
+                            <p class="cert-description">
+                                Maîtrise des outils de versioning avec Git, gestion des branches, 
+                                collaboration sur GitHub et workflows de développement.
+                            </p>
+                            <div class="cert-details">
+                                <span class="cert-date">📅 Obtenue en 2023</span>
+                                <span class="cert-score">🏅 Certification Validée</span>
+                            </div>
+                            <button class="btn-voir-certif github-btn" onclick="window.location.href='#'">
+                                <i class="fas fa-external-link-alt"></i> Voir sur GitHub
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="certifications-actions">
                     <button class="btn-retour" onclick="window.location.href='./index.html#competence_certifs'">
                         <i class="fas fa-arrow-left"></i> Retour au Portfolio
@@ -140,10 +173,10 @@
             <div class="footer-content">
                 <p>© 2025 Manley.B - Tous droits réservés</p>
                 <div class="social-links">
-                    <a href="https://github.com/kibagami-nc" target="_blank" class="social-icon" title="GitHub">
+                    <a href="https://github.com/kibagami-nc" class="social-icon" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/manley-bouille/" target="_blank" class="social-icon" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/manley-bouille/" class="social-icon" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="mailto:manley-bouille@outlook.fr" class="social-icon" title="Email">
