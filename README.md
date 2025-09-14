@@ -2,9 +2,6 @@
 
 > Portfolio personnel moderne développé en HTML, CSS et JavaScript
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge)](https://kibagami-nc.github.io/Portfolio_Manley.B/)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-
 ## 📖 À propos
 
 Portfolio personnel présentant mon parcours, mes compétences et mes projets en développement web. Conçu avec une approche moderne et responsive, il met l'accent sur l'expérience utilisateur et les animations fluides.
