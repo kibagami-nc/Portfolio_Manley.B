@@ -217,10 +217,6 @@
 /* Adaptations pour tablettes et mobile avec repositionnement des éléments */
 
 @media (max-width: 57vh) {
-    @keyframes scroll-icons {
-    0% { transform: translateX(-135%); }
-    100% { transform: translateX(60%); }
-    }
     #competence_certifs {
     min-height: 90vh;
     display: flex;
@@ -276,4 +272,13 @@
         margin-top: 0em;
         width: 100%;
     }
+    .lang-icon:nth-child(1) { animation-delay: 0s; }
+    .lang-icon:nth-child(2) { animation-delay: -2s; }
+    .lang-icon:nth-child(3) { animation-delay: -4s; }
+    .lang-icon:nth-child(4) { animation-delay: -6s; }
+    .lang-icon:nth-child(5) { animation-delay: -8s; }
+    .lang-icon:nth-child(6) { animation-delay: -10s; }
+    .lang-icon:nth-child(7) { animation-delay: -12s; }
+    .lang-icon:nth-child(8) { animation-delay: -14s; }
+    .lang-icon:nth-child(9) { animation-delay: -16s; }
 }
