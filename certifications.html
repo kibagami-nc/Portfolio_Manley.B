@@ -1,39 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
-<html>
 
 <head>
-
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/footer.css"/>
     <link rel="stylesheet" href="./css/certifications.css"/>
+    <link rel="stylesheet" href="./css/topbar.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <title>Certification - Manley.B</title>
-
+    <title>Certifications - Manley.B</title>
 </head>
 
 <body>
+    <header id="topbar">
+        <span>Certifications - Manley.B</span>
+        <nav>
+            <button id="menu-toggle" aria-label="Ouvrir le menu">Menu ☰</button>
+            <ul class="menu" id="menu-list">
+                <li><a onclick="window.location.href='./index.html#competence_certifs'">Retour Portfolio</a></li>
+                <li><a href="./index.html#accueil">Accueil</a></li>
+                <li><a href="./index.html#presentation">À propos</a></li>
+                <li><a href="./index.html#formation">Formation</a></li>
+                <li><a href="./index.html#competence_certifs">Compétences</a></li>
+                <li><a href="./index.html#projets">Projets</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <script src="./js/topbar.js"></script>
+    </header>
 
     <main>
-        <section class="certifications">
-            <h1>Certifications</h1>
-            <div class="certification-list">
-                <div class="certification-item">
-                    <h2>Certification 1</h2>
-                    <p>Description de la certification 1.</p>
-                    <button class="btn-voir-plus" onclick="window.open('https://www.google.com', '_blank')">Voir plus</button>
-                </div>
-                <div class="certification-item">
-                    <h2>Certification 2</h2>
-                    <p>Description de la certification 2.</p>
-                    <button class="btn-voir-plus" onclick="window.open('https://www.google.com', '_blank')">Voir plus</button>
-                </div>
+        <section id="certifications-hero" class="category">
+            <div class="certifications-content">
+                <h1 class="scramble-text" data-text="Mes Certifications">Mes Certifications</h1>
+                <p class="scramble-text" data-text="Découvrez les certifications que j'ai obtenues.">
+                    Découvrez les certifications que j'ai obtenues.
+                </p>
+            </div>
+            <img src="./img/il_pfp_pres.png" alt="Certifications Manley" class="certifications-image" />
+        </section>
+
+        <section id="certifications-list" class="category">
+            <div class="certifications-encadre">
+                <h2>Certifications Obtenues 🏆</h2>
                 
+                <div class="certifications-grid">
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certification PIX</h3>
+                        <p class="cert-level">test</p>
+                        <p class="cert-description">
+                            Certification des compétences numériques dans les domaines de l'information, 
+                            la communication, la création de contenu, la protection et la résolution de problèmes.
+                        </p>
+                        <div class="cert-details">
+                            <span class="cert-date">📅 test</span>
+                            <span class="cert-score">🏅 test</span>
+                        </div>
+                        <button class="btn-voir-certif" onclick="window.open('#', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Voir la certification
+                        </button>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>test</h3>
+                        <p class="cert-level">test</p>
+                        <p class="cert-description">
+                            test
+                        </p>
+                        <div class="cert-details">
+                            <span class="cert-date">📅 test</span>
+                            <span class="cert-score">🏅 test</span>
+                        </div>
+                        <button class="btn-voir-certif" onclick="window.open('#', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Voir la certification
+                        </button>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3>Git & GitHub Fundamentals</h3>
+                        <p class="cert-level">test</p>
+                        <p class="cert-description">
+                            Maîtrise des outils de versioning avec Git, gestion des branches, 
+                            collaboration sur GitHub et workflows de développement.
+                        </p>
+                        <div class="cert-details">
+                            <span class="cert-date">📅 test</span>
+                            <span class="cert-score">🏅 test</span>
+                        </div>
+                        <button class="btn-voir-certif" onclick="window.open('#', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Voir la certification
+                        </button>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>test</h3>
+                        <p class="cert-level">test</p>
+                        <p class="cert-description">
+                            test
+                        </p>
+                        <div class="cert-details">
+                            <span class="cert-date">📅 test</span>
+                            <span class="cert-score">🏅 test</span>
+                        </div>
+                        <button class="btn-voir-certif" onclick="window.open('#', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Voir la certification
+                        </button>
+                    </div>
+                </div>
+
+                <div class="certifications-actions">
+                    <button class="btn-retour" onclick="window.location.href='./index.html#competence_certifs'">
+                        <i class="fas fa-arrow-left"></i> Retour au Portfolio
+                    </button>
+                    <button class="btn-contact" onclick="window.location.href='./index.html#contact'">
+                        <i class="fas fa-envelope"></i> Me Contacter
+                    </button>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Manley.B. Tous droits réservés.</p>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>© 2025 Manley.B - Tous droits réservés</p>
+                <div class="social-links">
+                    <a href="https://github.com/kibagami-nc" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/manley-bouille/" target="_blank" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:manley-bouille@outlook.fr" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="./js/fadeIn.js"></script>
+    <script src="./js/scrambleText.js"></script>
+</body>
+
+</html>

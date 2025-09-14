@@ -1,87 +1,243 @@
 /* 
- * STYLES POUR LA PAGE CERTIFICATIONS
- * Page secondaire affichant la liste détaillée des certifications
+ * STYLES POUR LA PAGE CERTIFICATIONS - THÈME COHÉRENT
+ * Design aligné avec la page index pour une expérience unifiée
  * Auteur: Manley.B
  */
 
-/* ==================== SECTION CERTIFICATIONS ==================== */
-/* Configuration principale de la page certifications */
+/* ==================== SECTION HERO CERTIFICATIONS ==================== */
+/* Section d'introduction similaire à l'accueil */
 
-.certifications {
-  min-height: 60vh;
-  height: 60vh;
-  padding: 0 8vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-  box-sizing: border-box;
-  text-align: center;
-  background-color: #CFDBD5;
-  border-radius: 16px;
-  box-shadow: 0 0 18px #0006;
-  margin: 3em auto;
-  max-width: 900px;
+#certifications-hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6em 8vw;
+    gap: 3em;
+    text-align: left;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, rgba(0, 255, 128, 0) 0%, rgba(255, 187, 0, 0) 100%);
 }
 
-.certifications h1 {
-  font-size: 2.8em;
-  margin: 0 0 1.5em 0;
-  color: #333533;
-  user-select: none;
+.certifications-content {
+    flex: 1 1 0;
+    min-width: 250px;
 }
 
-/* ==================== LISTE DES CERTIFICATIONS ==================== */
-/* Layout pour afficher les différentes certifications */
-
-.certification-list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
+#certifications-hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #000000;
+    user-select: none;
 }
 
-/* ==================== CARTES DE CERTIFICATION ==================== */
-/* Styles pour chaque certification individuelle */
-
-.certification-item {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.8em 2em;
-  box-shadow: 0 0 12px #0003;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  cursor: default;
-  text-align: left;
-  color: #50534b;
+#certifications-hero p {
+    font-size: 1.5em;
+    color: #666b68;
+    margin-top: 10px;
+    max-width: 35em;
 }
 
-.certification-item:hover {
-  box-shadow: 0 8px 32px #0008;
-  transform: translateY(-6px) scale(1.03);
+.certifications-image {
+    flex: 0 0 auto;
+    max-width: 400px;
+    width: 30vw;
+    min-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0;
+    display: block;
 }
 
-.certification-item h2 {
-  font-size: 1.8em;
-  margin-bottom: 0.6em;
-  color: #23b3a2;
-  font-weight: bold;
-  user-select: none;
+/* ==================== SECTION LISTE DES CERTIFICATIONS ==================== */
+/* Container principal avec le même style que les autres sections */
+
+#certifications-list {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 8vw;
+    gap: 2em;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.certification-item p {
-  font-size: 1.2em;
-  color: #333533;
-  font-weight: 500;
-  margin: 0;
-  line-height: 1.4em;
+.certifications-encadre {
+    width: 100%;
+    max-width: 1400px;
+    margin: 3em auto;
+    padding: 3em 2em;
+    background: #CFDBD5;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px #0006;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(2px);
 }
 
-/* ==================== BOUTONS D'ACTION ==================== */
-/* Styles pour les boutons de retour et autres actions */
+#certifications-list h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 2em;
+    user-select: none;
+}
 
-.btn-voir-plus {
-    padding: 1em 2em;
+/* ==================== GRILLE DES CERTIFICATIONS ==================== */
+/* Layout similaire aux cartes de projets */
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5em;
+    width: 100%;
+    margin: 2em 0;
+}
+
+/* ==================== CARTES DE CERTIFICATIONS ==================== */
+/* Style similaire aux cartes de projets */
+
+.certification-card {
+    background: #E8EDDF;
+    color: #000000;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px #0006;
+    padding: 2.5em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    cursor: default;
+    text-align: center;
+}
+
+.certification-card:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* ==================== ICÔNES DES CERTIFICATIONS ==================== */
+/* Icônes stylées pour chaque certification */
+
+.cert-icon {
+    font-size: 3em;
+    color: #F5CB5C;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background: rgba(245, 203, 92, 0.1);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.certification-card:hover .cert-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: rgba(245, 203, 92, 0.2);
+}
+
+/* ==================== CONTENU DES CARTES ==================== */
+/* Texte et informations des certifications */
+
+.certification-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+    color: #333533;
+    font-weight: bold;
+}
+
+.cert-level {
+    font-size: 1em;
+    color: #F5CB5C;
+    font-weight: 600;
+    margin-bottom: 1em;
+    padding: 0.3em 1em;
+    background: rgba(245, 203, 92, 0.1);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.cert-description {
+    font-size: 1em;
+    color: #333533;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+/* ==================== DÉTAILS DES CERTIFICATIONS ==================== */
+/* Informations supplémentaires */
+
+.cert-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+.cert-date,
+.cert-score {
+    font-size: 0.9em;
+    color: #666b68;
+    padding: 0.3em 0.8em;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* ==================== BOUTONS DES CERTIFICATIONS ==================== */
+/* Boutons avec le même style que ceux du portfolio principal */
+
+.btn-voir-certif {
+    user-select: none;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    background: rgba(40, 40, 40, 0.9);
+    color: #F5CB5C;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.btn-voir-certif:hover {
+    background: #F5CB5C;
+    color: #1a1a1a;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(245, 203, 92, 0.4);
+}
+
+/* ==================== ACTIONS DE LA PAGE ==================== */
+/* Boutons de navigation */
+
+.certifications-actions {
+    display: flex;
+    gap: 2em;
+    margin-top: 3em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-retour,
+.btn-contact {
+    user-select: none;
+    padding: 1.2em 2em;
     font-size: 1.1em;
     background: rgba(40, 40, 40, 0.9);
     color: #F5CB5C;
@@ -91,12 +247,15 @@
     font-weight: 600;
     transition: all 0.3s ease;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
 }
 
-.btn-voir-plus:hover {
+.btn-retour:hover,
+.btn-contact:hover {
     background: #F5CB5C;
     color: #1a1a1a;
     transform: translateY(-3px) scale(1.05);
@@ -104,24 +263,102 @@
 }
 
 /* ==================== STYLES RESPONSIVES ==================== */
-/* Adaptations pour l'affichage sur tablettes et mobile */
+/* Adaptations pour mobile cohérentes avec l'index */
 
 @media (max-width: 57vh) {
-  .certifications {
-    padding: 1.5em 3vw;
-    margin: 2em auto;
-    height: auto;
-  }
+    /* Section hero responsive */
+    #certifications-hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2em;
+        padding: 4em 2vw;
+        min-height: 60vh;
+    }
 
-  .certifications h1 {
-    font-size: 4em;
-  }
+    .certifications-content {
+        align-items: center;
+        text-align: center;
+    }
 
-  .certification-item h2 {
-    font-size: 2.5em;
-  }
+    #certifications-hero h1 {
+        font-size: 5.5em;
+        margin-bottom: 20px;
+    }
 
-  .certification-item p {
-    font-size: 2.2em;
-  }
+    #certifications-hero p {
+        font-size: 3em;
+    }
+
+    .certifications-image {
+        width: 60vw;
+        max-width: 300px;
+        min-width: 150px;
+    }
+
+    /* Section liste responsive */
+    #certifications-list h2 {
+        font-size: 4em;
+    }
+
+    .certifications-encadre {
+        margin-top: 2em;
+        padding: 2em 1em;
+        border-radius: 18px;
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    .certification-card {
+        padding: 3em 2em;
+    }
+
+    .certification-card h3 {
+        font-size: 2.8em;
+    }
+
+    .cert-level {
+        font-size: 2.2em;
+        padding: 0.5em 1.5em;
+    }
+
+    .cert-description {
+        font-size: 2.4em;
+        line-height: 1.4;
+    }
+
+    .cert-date,
+    .cert-score {
+        font-size: 2em;
+        padding: 0.5em 1em;
+    }
+
+    .btn-voir-certif {
+        font-size: 2.2em;
+        padding: 1.2em 2em;
+    }
+
+    .certifications-actions {
+        flex-direction: column;
+        gap: 1.5em;
+        align-items: center;
+    }
+
+    .btn-retour,
+    .btn-contact {
+        font-size: 2.5em;
+        padding: 1.2em 2.5em;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cert-icon {
+        font-size: 4em;
+        width: 120px;
+        height: 120px;
+    }
 }
