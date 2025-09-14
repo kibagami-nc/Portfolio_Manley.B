@@ -13,7 +13,11 @@
 const fadeInOnScroll = (entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+            // Ajouter la classe visible avec un léger délai pour un effet plus naturel
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, 200);
+            
             observer.unobserve(entry.target);
         }
     });

@@ -31,7 +31,7 @@ html {
 .category {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 3s ease, transform 4s ease;
+    transition: opacity 1s ease-out, transform 1s ease-out;
     margin: 50px 0;
     padding: 20px;
     border-radius: 8px;
@@ -93,3 +93,87 @@ button:hover, .btn-CV:hover, .btn-voir-plus:hover, .btn-voir-certif:hover, .btn-
 
 /* ==================== STYLES RESPONSIVES ==================== */
 /* Media queries pour l'adaptation aux différentes tailles d'écran */
+
+/* ==================== ANIMATIONS D'APPARITION ÉLÉGANTES ==================== */
+/* Animations fluides et naturelles pour l'apparition des éléments */
+
+/* Animation en cascade pour les éléments de contenu */
+.category.visible h1,
+.category.visible h2,
+.category.visible h3 {
+    animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+.category.visible p {
+    animation: slideInUp 0.6s ease-out 0.4s both;
+}
+
+.category.visible img {
+    animation: fadeInScale 0.8s ease-out 0.3s both;
+}
+
+.category.visible button,
+.category.visible .btn-CV,
+.category.visible .btn-voir-plus,
+.category.visible .btn-voir-certif,
+.category.visible .btn-submit {
+    animation: slideInUp 0.6s ease-out 0.6s both;
+}
+
+/* Animation pour les cartes avec effet en cascade */
+.category.visible .projet-card:nth-child(1) { animation: slideInUp 0.7s ease-out 0.1s both; }
+.category.visible .projet-card:nth-child(2) { animation: slideInUp 0.7s ease-out 0.2s both; }
+.category.visible .projet-card:nth-child(3) { animation: slideInUp 0.7s ease-out 0.3s both; }
+.category.visible .projet-card:nth-child(4) { animation: slideInUp 0.7s ease-out 0.4s both; }
+.category.visible .projet-card:nth-child(5) { animation: slideInUp 0.7s ease-out 0.5s both; }
+.category.visible .projet-card:nth-child(6) { animation: slideInUp 0.7s ease-out 0.6s both; }
+
+.category.visible .colonne-pro { animation: slideInUp 0.7s ease-out 0.1s both; }
+.category.visible .colonne-sco { animation: slideInUp 0.7s ease-out 0.2s both; }
+
+.category.visible .certif-flexbox,
+.category.visible .contact-encadre,
+.category.visible .projets-encadre {
+    animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+/* Keyframes pour les animations */
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* États initiaux pour éviter le flash */
+.category h1, .category h2, .category h3,
+.category p, .category img,
+.category button, .category .btn-CV, .category .btn-voir-plus, .category .btn-voir-certif, .category .btn-submit,
+.category .projet-card, .category .colonne-pro, .category .colonne-sco,
+.category .certif-flexbox, .category .contact-encadre, .category .projets-encadre {
+    opacity: 0;
+}
+
+/* Spécification pour tous les éléments de la section projets */
+#projets .projet-card {
+    opacity: 0;
+}
+
+#projets.visible .projet-card {
+    opacity: 1;
+}

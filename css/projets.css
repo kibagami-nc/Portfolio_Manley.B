@@ -61,6 +61,7 @@
     flex-direction: column;
     align-items: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    opacity: 1; /* Force l'affichage pour la section projets */
 }
 
 .projet-card:hover {
