@@ -116,14 +116,6 @@ html, body {
   width: 100%;
 }
 
-.colonne-sco h4 {
-  color: #ffd000;
-  font-size: 1.2em;
-  margin: 1em 0 0.3em 0;
-  text-align: left;
-  font-weight: bold;
-}
-
 .colonne-sco p {
   color: #000000;
   font-size: 1em;
@@ -168,7 +160,7 @@ html, body {
   margin-bottom: 1em;
   margin-top: 0;
   color: #50534b;
-  font-size: 1.6em;
+  font-size: 1.75em;
   text-align: center;
   border-bottom: 2px solid #000000;
   padding-bottom: 0.5em;
@@ -176,14 +168,14 @@ html, body {
 
 .colonne-pro h4, .colonne-sco h4 {
   color: #23b3a2;
-  font-size: 1.2em;
+  font-size: 1.75em;
   margin: 1em 0 0.3em 0;
   text-align: left;
 }
 
 .colonne-pro p, .colonne-sco p {
   color: #333533;
-  font-size: 1em;
+  font-size: 1.3em;
   margin: 0 0 1.2em 0;
   font-weight: 500;
 }

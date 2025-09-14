@@ -225,7 +225,7 @@
 
 @media (max-width: 57vh) {
     #competence_certifs {
-    min-height: 90vh;
+    min-height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -269,18 +269,18 @@
     .lang-info-box {
         top: 120%;
         font-size: 2em;
-        min-width: 160px;
+        min-width: 230px;
         padding: 0.7em 1em;
     }
     .lang-icons-bar-moving {
-    overflow: visible;
-    position: relative;
-    display: flex;
-    align-items: center;
-    bottom: -47em;
+        overflow: visible;
+        position: relative;
+        display: flex;
+        align-items: center;
+        bottom: -47em;
     }
     .certif-flexbox {
-        font-size: 1.5em;
+        font-size: 2.5em;
         flex-direction: column;
         align-items: stretch;
         gap: 1.2em;
