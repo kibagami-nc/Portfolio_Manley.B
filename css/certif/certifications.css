@@ -557,3 +557,94 @@
     }
     
 }
+
+/* ==================== RÉDUCTION TAILLE MOBILE GLOBALE ==================== */
+/* Styles pour réduire la taille du texte sur mobile */
+
+@media (max-width: 57vh) {
+    /* Ajustement du body pour topbar plus petite */
+    body {
+        padding-top: 50px !important;
+    }
+    
+    /* Section hero plus compacte */
+    #certifications-hero {
+        padding: 1.5em 2vw !important;
+        min-height: calc(60vh - 50px) !important;
+    }
+    
+    #certifications-hero h1 {
+        font-size: 2.2em !important;
+        margin-bottom: 15px !important;
+    }
+    
+    #certifications-hero p {
+        font-size: 0.9em !important;
+    }
+    
+    .certifications-image {
+        width: 45vw !important;
+        max-width: 250px !important;
+        min-width: 120px !important;
+    }
+    
+    /* Section liste plus compacte */
+    #certifications-list h2 {
+        font-size: 2em !important;
+    }
+
+    .certifications-encadre {
+        margin-top: 1.5em !important;
+        padding: 1.5em 0.8em !important;
+    }
+
+    .certification-category {
+        margin: 2em 0 !important;
+        padding: 1.5em 1em !important;
+    }
+
+    .category-header h3 {
+        font-size: 0.9em !important;
+    }
+
+    .platform-logo {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 1em !important;
+    }
+
+    .certification-card h3,
+    .certification-card h4 {
+        font-size: 1.4em !important;
+    }
+
+    .cert-level {
+        font-size: 1em !important;
+    }
+
+    .cert-description {
+        font-size: 1.1em !important;
+    }
+
+    .cert-date,
+    .cert-score {
+        font-size: 1.2em !important;
+    }
+
+    .btn-voir-certif {
+        font-size: 1.6em !important;
+    }
+
+    .btn-retour,
+    .btn-contact {
+        font-size: 0.9em !important;
+        padding: 1.2em !important;
+        max-width: 300px !important;
+    }
+
+    .cert-icon {
+        font-size: 3em !important;
+        width: 100px !important;
+        height: 100px !important;
+    }
+}

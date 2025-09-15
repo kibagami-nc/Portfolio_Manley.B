@@ -48,7 +48,7 @@ const certificationObserver = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.1, // 10% de l'élément visible
+    threshold: 0.05, // 10% de l'élément visible
     rootMargin: '0px' // Pas de marge supplémentaire
 });
 

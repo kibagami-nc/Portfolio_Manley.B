@@ -1,0 +1,110 @@
+/* 
+ * STYLES POUR LE FOOTER
+ * Pied de page avec copyright et icônes de réseaux sociaux
+ * Auteur: Manley.B
+ */
+
+/* ==================== FOOTER PRINCIPAL ==================== */
+/* Configuration de base du pied de page */
+
+footer {
+    user-select: none;
+    background-color: #282828;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ==================== CONTENU DU FOOTER ==================== */
+/* Layout en flexbox pour organiser copyright et réseaux sociaux */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #CFDBD5;
+}
+
+/* ==================== ICÔNES RÉSEAUX SOCIAUX ==================== */
+/* 
+ * Styles pour les icônes sociales avec effets hover élégants
+ * Design circulaire avec bordures et animations
+ */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #CFDBD5;
+    transition: all 0.3s ease;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(207, 219, 213, 0.1);
+    border: 1px solid rgba(207, 219, 213, 0.2);
+    text-decoration: none;
+}
+
+/* ==================== EFFETS HOVER ==================== */
+/* Animations au survol des icônes avec transform et color change */
+
+.social-icon:hover {
+    color: #F5CB5C;
+    background: rgba(245, 203, 92, 0.2);
+    border-color: #F5CB5C;
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* ==================== STYLES RESPONSIVES ==================== */
+/* Adaptations pour tablettes et mobile avec centrage du contenu */
+
+.fab, .fas {
+    font-size: 1em;
+}
+
+@media (max-width: 57vh) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .social-icon {
+        font-size: 70px;
+        width: 80px;
+        height: 80px;
+    }
+    footer p {
+        font-size: 2.5em;
+    }
+}
