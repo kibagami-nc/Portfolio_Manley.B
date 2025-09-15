@@ -86,7 +86,7 @@ footer p {
 @media (max-width: 57vh) {
     .footer-content {
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
     }
     
     .social-links {
@@ -94,17 +94,25 @@ footer p {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 60px;
+        gap: 40px;
         width: 100%;
         margin: 0 auto;
     }
 
     .social-icon {
-        font-size: 70px;
-        width: 80px;
-        height: 80px;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
     }
+    
     footer p {
-        font-size: 2.5em;
+        font-size: 1em;
     }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
 }
