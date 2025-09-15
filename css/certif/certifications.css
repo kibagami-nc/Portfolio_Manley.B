@@ -429,21 +429,21 @@
 
     .arrow {
         position: absolute;
-        top: 100%;
+        top: 105%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transform: rotate(deg);
+        transform: rotate(0deg);
         cursor: pointer;
     }
 
     .arrow span {
         display: block;
-        width: 2.5vw;
-        height: 2.5vw;
-        border-bottom: 5px solid #333533;
-        border-right: 5px solid #333533;
+        width: 3.5vw;
+        height: 3.5vw;
+        border-bottom: 2px solid #333533;
+        border-right: 2px solid #333533;
         transform: rotate(45deg);
-        margin: -10px;
+        margin: -5px;
         animation: animate 2s infinite;
     }
 
