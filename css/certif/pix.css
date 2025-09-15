@@ -23,22 +23,23 @@
     gap: 1.5em;
     margin-bottom: 2em;
     padding-bottom: 1em;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: none !important;
 }
 
 .pix-category .platform-logo {
     width: 60px;
     height: 60px;
     border-radius: 12px;
-    background: #ffffff;
-    padding: 8px;
+    background: #ffffff !important;
+    color: #1e3a8a !important;
+    border: 2px solid #1e3a8a !important;
 }
 
 .pix-category .category-header h3 {
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 1.8em;
     margin: 0;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: none !important;
 }
 
 /* ==================== CARTES PIX ==================== */
@@ -112,5 +113,19 @@
 
     .pix-btn {
         font-size: 1.1em;
+    }
+}
+
+/* ==================== DÉSACTIVATION ZOOM MOBILE PIX ==================== */
+
+@media (max-width: 57vh) {
+    .pix-btn {
+        transform: none !important;
+        transition: background 0.3s ease, color 0.3s ease !important;
+    }
+
+    .pix-btn:hover {
+        transform: none !important;
+        box-shadow: 0 4px 15px rgba(30, 58, 138, 0.2) !important;
     }
 }

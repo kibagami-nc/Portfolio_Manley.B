@@ -156,6 +156,76 @@
     box-shadow: 0 3px 10px rgba(245, 203, 92, 0.2);
 }
 
+/* ==================== BOUTON CERTIFICATION SPÉCIAL ==================== */
+/* Bouton pour naviguer vers la page certifications */
+
+.btn-certification {
+    background: linear-gradient(135deg, #F5CB5C 0%, #e6b84d 100%);
+    color: #1a1a1a;
+    border: 2px solid #000000;
+    margin-right: 3em;
+    padding: 0.8em 1.5em;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    box-shadow: 0 4px 15px rgba(245, 203, 92, 0.3);
+    backdrop-filter: blur(5px);
+    font-size: 0.9em;
+}
+
+.btn-certification:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    color: #000000;
+    border-color: #F5CB5C;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(245, 203, 92, 0.4);
+}
+
+.btn-certification:active {
+    transform: translateY(-1px) scale(1.02);
+}
+
+.btn-certification i {
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+}
+
+.btn-certification:hover i {
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* ==================== INTEGRATION DANS LE MENU ==================== */
+/* Styles pour intégrer le bouton dans la topbar */
+
+#topbar .btn-certification {
+    margin-left: 1em;
+    font-size: 0.85em;
+    padding: 0.6em 1.2em;
+}
+
+@media (max-width: 768px) {
+    #topbar .btn-certification {
+        display: none;
+    }
+    
+    /* Afficher dans le menu mobile */
+    #topbar .menu .btn-certification {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0.5em 0;
+        padding: 1em 2em;
+        border-radius: 6px;
+    }
+}
+
 /* ==================== STYLES RESPONSIVES ==================== */
 /* Adaptations pour tablettes et mobile */
 
@@ -163,24 +233,34 @@
     #topbar {
     height: 200px;
     font-size: 3em;
-}
+    }
 
     #topbar span {
     padding-left: 15px;
-}
+    }
 
     #menu-toggle {
     font-size: 1.2em;
     padding: 8px 16px;
     margin-right: 15px;
-}
+    }
 
     .menu {
         top: 2.5em;
         right: 0.5em;
         min-width: 150px;
         font-size: 1.4em;
-}
+    }
+
+    .btn-certification {
+        border: 2px solid #000000;
+        margin-right: 0.5em;
+        padding: 0.8em 0.5em;
+        border-radius: 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
 }
 
 

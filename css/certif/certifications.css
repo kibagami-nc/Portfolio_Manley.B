@@ -115,7 +115,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 0vw;
+    padding: 0 6vw;
     gap: 2em;
     text-align: center;
     box-sizing: border-box;
@@ -135,15 +135,26 @@
     width: 100%;
     max-width: 1600px;
     margin: 3em auto;
-    padding: 3em 2em;
-    background: #CFDBD5;
+    padding: 3em 3em;
+    background: linear-gradient(135deg, #e0f2fe 0%, #fff89a46 100%);
     border-radius: 32px;
-    box-shadow: 0 8px 32px rgba(33, 150, 243, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     backdrop-filter: blur(2px);
     border: 1px solid rgba(33, 150, 243, 0.1);
+}
+
+/* ==================== CONTAINER CATÉGORIES CÔTE À CÔTE ==================== */
+/* Layout en grille pour les catégories sur PC */
+
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3em;
+    width: 100%;
+    margin-top: 2em;
 }
 
 #certifications-list h2 {
@@ -171,8 +182,8 @@
 /* Container pour chaque plateforme */
 
 .certification-category {
-    margin: 4em 0;
-    padding: 2.5em 3em;
+    margin: 0;
+    padding: 2.5em 2em;
     border-radius: 24px;
     position: relative;
     overflow: hidden;
@@ -430,7 +441,7 @@
 
     .arrow {
         position: absolute;
-        top: 105%;
+        top: 100%;
         left: 50%;
         transform: translate(-50%, -50%);
         transform: rotate(0deg);
@@ -633,7 +644,7 @@
     }
 
     .btn-voir-certif {
-        font-size: 1em !important;
+        font-size: 1.6em !important;
     }
 
     .btn-retour,
@@ -647,5 +658,93 @@
         font-size: 3em !important;
         width: 100px !important;
         height: 100px !important;
+    }
+}
+
+/* ==================== RESPONSIVE CATÉGORIES ==================== */
+/* Adaptations pour mobile */
+
+@media (max-width: 1200px) {
+    .categories-container {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+}
+
+@media (max-width: 57vh) {
+    .categories-container {
+        grid-template-columns: 1fr;
+        gap: 2em;
+        margin-top: 1em;
+    }
+
+    .certification-category {
+        min-height: auto;
+        margin: 0;
+        padding: 1.5em 1em;
+    }
+}
+
+/* ==================== DÉSACTIVATION ANIMATIONS ZOOM MOBILE ==================== */
+/* Suppression des animations de zoom et transformations sur mobile */
+
+@media (max-width: 57vh) {
+    /* Cartes de certifications - pas de zoom */
+    .certification-card {
+        transform: none !important;
+        transition: box-shadow 0.3s ease !important;
+    }
+
+    .certification-card:hover {
+        transform: none !important;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+    }
+
+    /* Boutons certifications - pas de zoom */
+    .btn-voir-certif {
+        transform: none !important;
+        transition: background 0.3s ease, color 0.3s ease !important;
+    }
+
+    .btn-voir-certif:hover {
+        transform: none !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    /* Boutons navigation - pas de zoom */
+    .btn-retour,
+    .btn-contact {
+        transform: none !important;
+        transition: background 0.3s ease, color 0.3s ease !important;
+    }
+
+    .btn-retour:hover,
+    .btn-contact:hover {
+        transform: none !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    /* Icônes - pas de rotation ni zoom */
+    .cert-icon {
+        transition: background 0.3s ease !important;
+    }
+
+    .certification-card:hover .cert-icon {
+        transform: none !important;
+        background: rgba(245, 203, 92, 0.15) !important;
+    }
+
+    /* Catégories - animation d'apparition seulement */
+    .certification-category.visible {
+        transform: translateY(0) scale(1) !important;
+    }
+
+    /* Boutons spécifiques par plateforme - pas de zoom */
+    .pix-btn:hover,
+    .openclassrooms-btn:hover,
+    .github-btn:hover,
+    .coursera-btn:hover {
+        transform: none !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
     }
 }

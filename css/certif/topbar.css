@@ -149,6 +149,7 @@
 }
 
 .menu a:hover {
+    cursor: pointer;
     background: rgba(245, 203, 92, 0.2);
     color: #F5CB5C;
     transform: translateX(5px) scale(1.02);

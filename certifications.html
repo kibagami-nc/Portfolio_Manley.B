@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/certif/pix.css"/>
     <link rel="stylesheet" href="./css/certif/openclassrooms.css"/>
     <link rel="stylesheet" href="./css/certif/github.css"/>
+    <link rel="stylesheet" href="./css/certif/netacad.css"/>
 
     <link rel="stylesheet" href="./css/certif/style.css"/>
     <link rel="stylesheet" href="./css/certif/topbar.css"/>
@@ -49,108 +50,120 @@
         </section>
 
         <section id="certifications-list" class="category">
-        <section id="certifications-list" class="category">
             <div class="certifications-encadre">
                 <h2>Mes Certifications par Plateforme 🏆</h2>
                 
-                <!-- Catégorie PIX -->
-                <div class="certification-category pix-category">
-                    <div class="category-header">
-                        <div class="platform-logo">PIX</div>
-                        <h3>PIX - Compétences Numériques</h3>
+                <div class="categories-container">
+                    <!-- Catégorie PIX -->
+                    <div class="certification-category pix-category">
+                        <div class="category-header">
+                            <div class="platform-logo">PIX</div>
+                            <h3>PIX - Compétences Numériques</h3>
+                        </div>
+                        <div class="certifications-grid">
+                            <div class="certification-card pix-card">
+                                <div class="cert-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <h4>Certification PIX</h4>
+                                <p class="cert-level">Niveau 7</p>
+                                <p class="cert-description">
+                                    Certification des compétences numériques dans les domaines de l'information, 
+                                    la communication, la création de contenu, la protection et la résolution de problèmes.
+                                </p>
+                                <div class="cert-details">
+                                    <span class="cert-date">📅 Certifications : 1 (Niveau 7)</span>
+                                </div>
+                                <button class="btn-voir-certif pix-btn" onclick="window.location.href='#'">
+                                    <i class="fas fa-external-link-alt"></i> Voir pdf
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="certifications-grid">
-                        <div class="certification-card pix-card">
-                            <div class="cert-icon">
-                                <i class="fas fa-certificate"></i>
+
+                    <!-- Catégorie OpenClassrooms -->
+                    <div class="certification-category openclassrooms-category">
+                        <div class="category-header">
+                            <div class="platform-logo">OC</div>
+                            <h3>OpenClassrooms - Formation en ligne</h3>
+                        </div>
+                        <div class="certifications-grid">
+                            <div class="certification-card openclassrooms-card">
+                                <div class="cert-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h4>Formation / Cours</h4>
+                                <p class="cert-level">Niveau Débutant / Intermédiaire</p>
+                                <p class="cert-description">
+                                    Formation complète sur le développement pour tout les langages et de tout niveaux.
+                                </p>
+                                <div class="cert-details">
+                                    <span class="cert-date">📅 Certifications : 1</span>
+                                </div>
+                                <button class="btn-voir-certif openclassrooms-btn" onclick="window.location.href='#'">
+                                    <i class="fas fa-external-link-alt"></i> Voir pdf
+                                </button>
                             </div>
-                            <h4>Certification PIX</h4>
-                            <p class="cert-level">Niveau 7</p>
-                            <p class="cert-description">
-                                Certification des compétences numériques dans les domaines de l'information, 
-                                la communication, la création de contenu, la protection et la résolution de problèmes.
-                            </p>
-                            <div class="cert-details">
-                                <span class="cert-score">🏅 Score: 450/1024</span>
+
+                        </div>
+                    </div>
+
+                    <!-- Catégorie GitHub -->
+                    <div class="certification-category github-category">
+                        <div class="category-header">
+                            <div class="platform-logo">GH</div>
+                            <h3>GitHub - Versioning et Collaboration</h3>
+                        </div>
+                        <div class="certifications-grid">
+                            <div class="certification-card github-card">
+                                <div class="cert-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <h4>Git & GitHub Fundamentals</h4>
+                                <p class="cert-level">Niveau Débutant</p>
+                                <p class="cert-description">
+                                    Maîtrise des outils de versioning avec Git, gestion des branches, 
+                                    collaboration sur GitHub et workflows de développement.
+                                </p>
+                                <div class="cert-details">
+                                    <span class="cert-date">📅 Certifications : 1</span>
+                                </div>
+                                <button class="btn-voir-certif github-btn" onclick="window.location.href='#'">
+                                    <i class="fas fa-external-link-alt"></i> Voir pdf
+                                </button>
                             </div>
-                            <button class="btn-voir-certif pix-btn" onclick="window.location.href='#'">
-                                <i class="fas fa-external-link-alt"></i> Voir pdf
-                            </button>
+                        </div>
+                    </div>
+                    <!-- Catégorie Netacad -->
+                    <div class="certification-category netacad-category">
+                        <div class="category-header">
+                            <div class="platform-logo">NC</div>
+                            <h3>Netacad - Réseaux et Sécurité</h3>
+                        </div>
+                        <div class="certifications-grid">
+                            <div class="certification-card netacad-card">
+                                <div class="cert-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <h4>Introduction aux Réseaux</h4>
+                                <p class="cert-level">Niveau Débutant</p>
+                                <p class="cert-description">
+                                    Formation complète sur les réseaux informatiques, y compris les protocoles, 
+                                    l'adressage IP et la sécurité des réseaux.
+                                </p>
+                                <div class="cert-details">
+                                    <span class="cert-date">📅 Certifications : 1</span>
+                                </div>
+                                <button class="btn-voir-certif netacad-btn" onclick="window.location.href='#'">
+                                    <i class="fas fa-external-link-alt"></i> Voir pdf
+                                </button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
-                <!-- Catégorie OpenClassrooms -->
-                <div class="certification-category openclassrooms-category">
-                    <div class="category-header">
-                        <div class="platform-logo">OC</div>
-                        <h3>OpenClassrooms - Formation en ligne</h3>
-                    </div>
-                    <div class="certifications-grid">
-                        <div class="certification-card openclassrooms-card">
-                            <div class="cert-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h4>Introduction au Développement Web</h4>
-                            <p class="cert-level">Niveau Débutant</p>
-                            <p class="cert-description">
-                                Formation complète sur les technologies web : HTML5, CSS3, JavaScript, 
-                                responsive design et bonnes pratiques de développement.
-                            </p>
-                            <div class="cert-details">
-                                <span class="cert-date">📅 Obtenue en 2025</span>
-                            </div>
-                            <button class="btn-voir-certif openclassrooms-btn" onclick="window.location.href='#'">
-                                <i class="fas fa-external-link-alt"></i> Voir pdf
-                            </button>
-                        </div>
-                        
-                        <div class="certification-card openclassrooms-card">
-                            <div class="cert-icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <h4>Apprenez à programmer en JavaScript</h4>
-                            <p class="cert-level">Niveau Débutant</p>
-                            <p class="cert-description">
-                                Formation sur les bases du JavaScript : variables, fonctions, DOM, 
-                                événements et programmation orientée objet.
-                            </p>
-                            <div class="cert-details">
-                                <span class="cert-date">📅 Obtenue en 2025</span>
-                            </div>
-                            <button class="btn-voir-certif openclassrooms-btn" onclick="window.location.href='#'">
-                                <i class="fas fa-external-link-alt"></i> Voir pdf
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Catégorie GitHub -->
-                <div class="certification-category github-category">
-                    <div class="category-header">
-                        <div class="platform-logo">GH</div>
-                        <h3>GitHub - Versioning et Collaboration</h3>
-                    </div>
-                    <div class="certifications-grid">
-                        <div class="certification-card github-card">
-                            <div class="cert-icon">
-                                <i class="fab fa-git-alt"></i>
-                            </div>
-                            <h4>Git & GitHub Fundamentals</h4>
-                            <p class="cert-level">Niveau Débutant</p>
-                            <p class="cert-description">
-                                Maîtrise des outils de versioning avec Git, gestion des branches, 
-                                collaboration sur GitHub et workflows de développement.
-                            </p>
-                            <div class="cert-details">
-                                <span class="cert-date">📅 Obtenue en 2025</span>
-                            </div>
-                            <button class="btn-voir-certif github-btn" onclick="window.location.href='#'">
-                                <i class="fas fa-external-link-alt"></i> Voir pdf
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            
                 
                 <div class="certifications-actions">
                     <button class="btn-retour" onclick="window.location.href='./index.html#competence_certifs'">

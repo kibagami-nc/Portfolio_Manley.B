@@ -111,3 +111,17 @@
     }
 
 }
+
+/* ==================== DÉSACTIVATION ZOOM MOBILE GITHUB ==================== */
+
+@media (max-width: 57vh) {
+    .github-btn {
+        transform: none !important;
+        transition: background 0.3s ease, color 0.3s ease !important;
+    }
+
+    .github-btn:hover {
+        transform: none !important;
+        box-shadow: 0 4px 15px rgba(31, 41, 55, 0.2) !important;
+    }
+}
